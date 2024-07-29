@@ -5,8 +5,9 @@ author: Nijith Wilson
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
 image:
-  url: https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  path: /_posts/image.png
+  alt: Thumbnail description
+  lqip: data:image/webp;base64,BASE64_ENCODED_LQIP
 ---
 
 ![alt text](https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E)
