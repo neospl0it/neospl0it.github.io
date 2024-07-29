@@ -105,7 +105,8 @@ Although the modern Internet is primarily based on the simpler TCP/IP model, the
 
 #### The Seven Layers of the OSI Model:
 
-*image*
+![Pasted image 20240729204131](https://github.com/user-attachments/assets/0553ad4d-f594-482e-aaed-916ccc45e2a8)
+
 
 1. **Physical Layer:**
    - **Function:** Transmits raw bitstreams over a physical medium.
