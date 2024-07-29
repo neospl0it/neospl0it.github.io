@@ -4,7 +4,9 @@ date: 2024-07-29
 author: Nijith Wilson
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
-thumbnail: ![CyberSploit 1 Thumbnail](https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E)
+image:
+  url: https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E
+  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 ![alt text](https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E)
