@@ -1,11 +1,10 @@
 ---
 title: "CyberSploit 1 Walkthrough"
 date: 2024-07-29
-author: Nijith Wilson
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
 image:
-  path: image.png
+  path: thumbnails/image.png
 ---
 
 ### Description
