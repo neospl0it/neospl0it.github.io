@@ -5,7 +5,7 @@ author: Nijith Wilson
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
 image:
-  path: /_posts/image.png
+  path: image.png
   alt: Thumbnail description
   lqip: data:image/webp;base64,BASE64_ENCODED_LQIP
 ---
