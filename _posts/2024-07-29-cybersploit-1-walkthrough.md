@@ -6,16 +6,10 @@ categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
 image:
   path: image.png
-  alt: Thumbnail description
-  lqip: data:image/webp;base64,BASE64_ENCODED_LQIP
 ---
-
-![alt text](https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E)
-
 
 ### Description
 
-  
 
 This walkthrough will guide you through exploiting the **CyberSploit 1** virtual machine available on VulnHub. Designed for beginners, this machine aims to teach about encoder-decoder techniques and Exploit-DB through the capture of three flags.
 
