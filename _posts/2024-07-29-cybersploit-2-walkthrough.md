@@ -1,6 +1,6 @@
 ---
 title: "CyberSploit 2 VulnHub Walkthrough"
-description: "Gain root access on the CyberSploit2 VM with this guide on IP discovery, port scanning, and privilege escalation."
+description: "Boot to Root Your target is gain the Root access There is no any flag in this VMs"
 date: 2024-07-29
 categories: [CTF, VulnHub]
 tags: [privilege escalation]

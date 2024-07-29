@@ -1,6 +1,6 @@
 ---
 title: "CyberSploit 1 Walkthrough"
-description: Explore the CyberSploit 1 VM with this guide on IP scanning, exploitation, and privilege escalation.
+description: "THIS IS A MACHINE FOR COMPLETE BEGINNER, THERE ARE THREE FALGS AVAILABLE IN THIS VM. FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB."
 date: 2024-07-29
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
