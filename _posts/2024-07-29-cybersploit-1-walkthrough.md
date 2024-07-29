@@ -5,7 +5,7 @@ date: 2024-07-29
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
 image:
-  path: thumbnails/image.png
+  path: https://media.licdn.com/dms/image/D5612AQGguzxgpRqeMg/article-cover_image-shrink_720_1280/0/1684129320616?e=2147483647&v=beta&t=leTcbamPsrsEZmLy16Gx6d2PVWMrlz-n2xTLOViwK5E
 ---
 
 ### Description
