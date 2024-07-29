@@ -1,6 +1,6 @@
 ---
 title: "CyberSploit 1 Walkthrough"
-description: "THIS IS A MACHINE FOR COMPLETE BEGINNER, THERE ARE THREE FALGS AVAILABLE IN THIS VM. FROM THIS VMs YOU WILL LEARN ABOUT ENCODER-DECODER & EXPLOIT-DB."
+description: "This is a machine for complete beginners; there are three falgs available in this VM. This VM will teach you about ENCODER-DECODER and EXPLOIT-DB.."
 date: 2024-07-29
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
