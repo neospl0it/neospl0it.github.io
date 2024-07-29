@@ -1,5 +1,6 @@
 ---
 title: "CyberSploit 1 Walkthrough"
+description: Explore the CyberSploit 1 VM with this guide on IP scanning, exploitation, and privilege escalation.
 date: 2024-07-29
 categories: [CTF, VulnHub]
 tags: [exploitation, privilege escalation, binary decoding]
