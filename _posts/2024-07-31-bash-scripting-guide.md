@@ -2,7 +2,7 @@
 title: "Bash Scripting"
 description: "An introduction to Bash scripting, exploring essential concepts, commands, and techniques for automating tasks in Linux."
 date: 2024-07-31
-categories: [Linux, Scripting]
+categories: [Linux, Bash-Scripting]
 tags: [bash, scripting, automation, linux]
 image:
   path: thbnls/bash.png
