@@ -12,7 +12,7 @@ image:
 
 ## Theory
 
-![Pasted image 20240730132512.png]
+![Pasted image 20240730132838](https://github.com/user-attachments/assets/35a3e652-0de1-4980-9bc0-3004642cb192)
 
 **Operating System (OS):** A system program that provides an interface between the user and the computer. Examples include Windows, Linux, and Android.
 
@@ -26,7 +26,7 @@ The kernel manages the following:
 - **Memory Management**
 - **Device Management**
 
-![Pasted image 20240730133327.png]
+![Pasted image 20240730133327](https://github.com/user-attachments/assets/e74ead71-6899-4c4a-a2e9-12b3b55ba10c)
 
 **The Shell:** A computer program that allows you to directly interact with a computer operating system using either a command-line interface (CLI) or a graphical user interface (GUI). It accepts human-readable commands from the user and converts them into instructions that the kernel can understand.
 
@@ -70,9 +70,9 @@ There are many other shells as well, such as:
 Hello World
 ```
 
-![Pasted image 20240730135629.png]
+![Pasted image 20240730135629](https://github.com/user-attachments/assets/155c5f71-37cb-4a75-ad5f-1827f2a7f9c4)
 
-![Pasted image 20240730140546.png]
+![Pasted image 20240730140546](https://github.com/user-attachments/assets/9fde2dca-47f3-4980-a9da-33e92c343d43)
 
 ```bash
 ┌──(root㉿neo)-[~/Bash]
