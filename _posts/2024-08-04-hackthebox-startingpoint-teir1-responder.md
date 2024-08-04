@@ -8,23 +8,25 @@ image:
   path: thbnls/responder.png
 ---
 
-
 **TARGET MACHINE IP ADDRESS**
 
-```10.129.240.15```
+``10.129.240.15``
 
 ### TASK 1
 
 When visiting the web service using the IP address, what is the domain that we are being redirected to?
 
-<details> <summary>Task 1 Hint</summary> Use the browser to visit the IP address of the box and watch how it changes.</details>
+<details> 
+<summary>Task 1 Hint</summary> 
+Use the browser to visit the IP address of the box and watch how it changes.
+</details>
 
 ![Pasted image 20240725102844](https://github.com/user-attachments/assets/0ca71313-fdf5-4b84-abb3-d1bd155b64e0)
 
 ```bash
 ┌──(root㉿neo)-[~]
 └─# nano /etc/hosts
-                                                                                                                                                                                                                                             
+
 ┌──(root㉿neo)-[~]
 └─# cat /etc/hosts                           
 127.0.0.1	localhost
@@ -38,7 +40,7 @@ ff02::2 ip6-allrouters
 
 ![Pasted image 20240725103202](https://github.com/user-attachments/assets/332134d6-4e51-4a61-b818-87c4bba37396)
 
-**Ans :**
+**Ans:**
 ```
 unika.htb
 ```
