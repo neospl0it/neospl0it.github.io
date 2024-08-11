@@ -158,7 +158,7 @@ First, download the [Mr. Robot 1](https://download.vulnhub.com/mrrobot/mrRobot.o
 VBoxManage import Downloads/mrRobot.ova
 ```
 
-![[Pasted image 20240811095935.png]]
+![Pasted image 20240811095935](https://github.com/user-attachments/assets/ba657882-cbd1-473f-b8fd-60aec71dc234)
 
 **Step 2: Adjust VM Settings**
 
@@ -166,11 +166,11 @@ After importing the VM, you need to adjust some settings to ensure proper functi
 
 - **Display Settings:** Change the Graphic Controller from `VBoxVGA` to `VMSVGA`. This adjustment helps with better display compatibility and performance.
 
-  ![[Pasted image 20240811100208.png]]
+![Pasted image 20240811100208](https://github.com/user-attachments/assets/9f7143cf-0d63-4911-9fc0-ecb7fd07d11a)
 
 - **Network Adapter:** Set the network adapter to `Bridged Adapter`. This configuration allows the VM to be on the same network as the host machine, enabling full network interaction.
 
-![[Pasted image 20240811100305.png]]
+![Pasted image 20240811100305](https://github.com/user-attachments/assets/7c655d59-a762-4cea-932e-e038f23a9fac)
 
 #### **Why Use a Bridged Adapter?**
 
@@ -295,23 +295,24 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 The output indicates that `wlan0` is the active interface with IP `192.168.1.8`. This is the interface we'll focus on for our Wireshark analysis.
 
-![[Pasted image 20240811115406.png]]
+![Pasted image 20240811115406](https://github.com/user-attachments/assets/fab4ff20-088f-43fa-9b48-af54e421dffd)
 
 ### **Choosing the Network Interface in Wireshark**
 
 Once you know your active interface, you can start Wireshark and select `wlan0` as the interface to monitor. This is done from the interface selection screen in Wireshark:
 1. Select `wlan0` from the list of interfaces.
 
-![[Pasted image 20240811115805.png]]
+![Pasted image 20240811115805](https://github.com/user-attachments/assets/d356f9ea-c801-4af2-bb64-beadaf969779)
 
-![[Pasted image 20240811120135.png]]
+![Pasted image 20240811120135](https://github.com/user-attachments/assets/30bb13c8-667e-4419-b780-ee53caf70fd0)
 
 2. Start capturing packets by clicking on the start button.
 ### **Performing Nmap Scan and Monitoring with Wireshark**
 
 Now, with Wireshark capturing traffic on `wlan0`, you can run an Nmap scan on your target IP. This scan will generate network traffic that Wireshark will capture. As the scan progresses, Wireshark will display packets associated with the Nmap scanning process, showing the interaction between your system and the target.
 
-![[Pasted image 20240811121055.png]]
+![Pasted image 20240811121055](https://github.com/user-attachments/assets/c434c683-cb65-4bb5-ae56-f873b953e8cd)
+
 ### **Analyzing the Scanned Traffic**
 
 The Nmap scan interacts with the target using the OSI model layers, primarily focusing on the network and transport layers.
