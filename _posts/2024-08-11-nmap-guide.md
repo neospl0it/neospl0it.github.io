@@ -243,17 +243,17 @@ Lets See The Background Process What Was Going On The Backend
 
 For That We Can Use Wireshark
 
-### What is wireshark ?
+## What is wireshark ?
 
 Wireshark is a powerful tool for capturing and analyzing network traffic. It helps in understanding what is happening on a network by providing a detailed view of packets being transmitted.
 
-### **Wireshark Overview**
+### Wireshark Overview
 
 - **Purpose:** Wireshark allows you to capture and examine the data traveling over your network. It helps in diagnosing network issues, analyzing protocols, and understanding network behavior.
 
 - **How It Works:** It captures packets from network interfaces and displays them in a user-friendly format. You can then analyze these packets to see the details of network communications.
 
-### **Example Use Case:**
+### Example Use Case:
 
 If you've scanned your network with Nmap and found open ports on a VM, you can use Wireshark to further investigate what is happening on those ports. For instance:
 
@@ -263,11 +263,11 @@ If you've scanned your network with Nmap and found open ports on a VM, you can u
 
 Wireshark is an invaluable tool for network administrators, security professionals, and anyone needing in-depth network analysis. It provides a granular view of network traffic and helps in diagnosing and understanding network-related issues.
 
-## **Analyzing the Network Layer with Wireshark**
+## Analyzing the Network Layer with Wireshark
 
 When we perform network analysis, understanding how data flows through the OSI (Open Systems Interconnection) model's layers is crucial. Wireshark provides the capability to capture and analyze packets at various layers, giving us insight into what is happening on the network. 
 
-### **Identifying the Network Interface**
+### Identifying the Network Interface
 
 First, we need to determine which network interface is active and relevant to our analysis. We can use the `ifconfig` command to list all network interfaces and their configurations. In your case, the active interface is `wlan0`, which is a wireless network interface. Here's what the `ifconfig` output shows:
 
@@ -297,7 +297,7 @@ The output indicates that `wlan0` is the active interface with IP `192.168.1.8`.
 
 ![Pasted image 20240811115406](https://github.com/user-attachments/assets/fab4ff20-088f-43fa-9b48-af54e421dffd)
 
-### **Choosing the Network Interface in Wireshark**
+### Choosing the Network Interface in Wireshark
 
 Once you know your active interface, you can start Wireshark and select `wlan0` as the interface to monitor. This is done from the interface selection screen in Wireshark:
 1. Select `wlan0` from the list of interfaces.
@@ -307,13 +307,14 @@ Once you know your active interface, you can start Wireshark and select `wlan0` 
 ![Pasted image 20240811120135](https://github.com/user-attachments/assets/30bb13c8-667e-4419-b780-ee53caf70fd0)
 
 2. Start capturing packets by clicking on the start button.
-### **Performing Nmap Scan and Monitoring with Wireshark**
+
+### Performing Nmap Scan and Monitoring with Wireshark
 
 Now, with Wireshark capturing traffic on `wlan0`, you can run an Nmap scan on your target IP. This scan will generate network traffic that Wireshark will capture. As the scan progresses, Wireshark will display packets associated with the Nmap scanning process, showing the interaction between your system and the target.
 
 ![Pasted image 20240811121055](https://github.com/user-attachments/assets/c434c683-cb65-4bb5-ae56-f873b953e8cd)
 
-### **Analyzing the Scanned Traffic**
+### Analyzing the Scanned Traffic
 
 The Nmap scan interacts with the target using the OSI model layers, primarily focusing on the network and transport layers.
 
@@ -331,7 +332,7 @@ In Wireshark, you'll see the packets traversing these layers:
 - **TCP/UDP (Layer 4):** Manages the establishment of connections and the transfer of data.
 - **Application Layer (Layer 7):** Where protocols like HTTP or HTTPS operate.
 
-### **Example Wireshark Capture Analysis**
+### Example Wireshark Capture Analysis
 
 1. **Ethernet Frame:**
    - Source MAC: Your device’s MAC address.
@@ -350,7 +351,7 @@ In Wireshark, you'll see the packets traversing these layers:
 
 Wireshark will show each layer in a hierarchical structure, allowing you to drill down into the specifics of the network interaction.
 
-### **Interpreting the Data**
+### Interpreting the Data
 
 By analyzing the captured data, you can:
 
