@@ -1,7 +1,7 @@
 ---
 title: "Nmap: The Ultimate Network Scanning Tool"
 description: "An in-depth guide on Nmap, its features, and why it's a preferred tool for network scanning and security auditing."
-date: 2024-07-29
+date: 2024-08-11
 categories: [Tools, Nmap]
 tags: [nmap, network-scanning, vulnerability-detection]
 image:
@@ -144,4 +144,216 @@ Although the modern Internet is primarily based on the simpler TCP/IP model, the
    - **Protocols:** HTTP, FTP, SMTP, DNS.
 
 The OSI model is essential for understanding and designing a robust network architecture. It enables interoperability between different products and software, and its layered approach allows for targeted troubleshooting and enhancements.
+
+### Lab Setup 
+
+In this guide, we'll walk through setting up the Mr. Robot VM from VulnHub and finding its IP address using Nmap.
+####  **VM Import and Configuration**
+
+**Step 1: Import the VM**
+
+First, download the [Mr. Robot 1](https://download.vulnhub.com/mrrobot/mrRobot.ova) VM image to your Downloads folder. To import it into VirtualBox, use the following command:
+
+```bash
+VBoxManage import Downloads/mrRobot.ova
+```
+
+![[Pasted image 20240811095935.png]]
+
+**Step 2: Adjust VM Settings**
+
+After importing the VM, you need to adjust some settings to ensure proper functionality:
+
+- **Display Settings:** Change the Graphic Controller from `VBoxVGA` to `VMSVGA`. This adjustment helps with better display compatibility and performance.
+
+  ![[Pasted image 20240811100208.png]]
+
+- **Network Adapter:** Set the network adapter to `Bridged Adapter`. This configuration allows the VM to be on the same network as the host machine, enabling full network interaction.
+
+![[Pasted image 20240811100305.png]]
+
+#### **Why Use a Bridged Adapter?**
+
+Using a bridged adapter is crucial for creating a realistic network environment. Here’s why:
+
+- **Same Network as Host:** The VM gets its own IP address on the same network as the host machine. This setup is useful when you want the VM to interact with other devices on the local network, such as for SSH, web servers, or other network-related tasks.
+
+- **Direct Communication:** Other machines on the network can directly communicate with the VM. This is important for penetration testing or lab environments where simulating external attacks or accessing the VM’s services from other devices is necessary.
+
+- **Avoiding NAT Limitations:** NAT (Network Address Translation) mode can restrict network interaction and requires port forwarding for external access. Bridged mode provides a unique IP address to the VM, avoiding these limitations.
+
+- **Realistic Networking Environment:** Bridged mode ensures that the VM behaves like a real machine on the network, making lab scenarios and exercises more practical and applicable to real-world situations.
+
+#### 3. **Finding the VM's IP Address**
+
+Once the VM is booted and running, you need to find its IP address. You can use Nmap, a powerful network scanning tool, for this purpose.
+
+**Step 1: Perform a Network Scan**
+
+Run the following Nmap command to scan your local network and discover live hosts:
+
+```bash
+nmap -sn <network-address>/24
+```
+
+Replace `<network-address>/24` with your network’s address. For instance, if your local network is `192.168.1.0/24`, the command would be:
+
+```bash
+nmap -sn 192.168.1.0/24
+```
+
+**Example Output:**
+
+```bash
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-08-11 10:10 IST
+Nmap scan report for linux.bbrouter (192.168.1.4)
+Host is up (0.00032s latency).
+MAC Address: 08:00:27:17:18:CC (Oracle VirtualBox virtual NIC)
+```
+
+In this example, the IP address of the Mr. Robot VM is `192.168.1.4`.
+
+#### Network Scanning with Nmap
+
+Once you have the IP address, you can perform a detailed scan on the VM. Using the default Nmap scan to check for open ports, run:
+
+```bash
+nmap 192.168.1.4
+```
+
+**Output:**
+
+```bash
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-08-11 10:18 IST
+Nmap scan report for linux.bbrouter (192.168.1.4)
+Host is up (0.00049s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+MAC Address: 08:00:27:17:18:CC (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.83 seconds
+```
+
+In this scan, the ports `80/tcp` (HTTP) and `443/tcp` (HTTPS) are open, while `22/tcp` (SSH) is closed.
+
+Lets See The Background Process What Was Going On The Backend
+
+For That We Can Use Wireshark
+
+### What is wireshark ?
+
+Wireshark is a powerful tool for capturing and analyzing network traffic. It helps in understanding what is happening on a network by providing a detailed view of packets being transmitted.
+
+### **Wireshark Overview**
+
+- **Purpose:** Wireshark allows you to capture and examine the data traveling over your network. It helps in diagnosing network issues, analyzing protocols, and understanding network behavior.
+
+- **How It Works:** It captures packets from network interfaces and displays them in a user-friendly format. You can then analyze these packets to see the details of network communications.
+
+### **Example Use Case:**
+
+If you've scanned your network with Nmap and found open ports on a VM, you can use Wireshark to further investigate what is happening on those ports. For instance:
+
+- **HTTP Traffic Analysis:** Start a Wireshark capture and filter for HTTP traffic (`tcp port 80`). This will show you the details of web requests and responses, helping you understand what data is being transmitted over the HTTP service.
+
+- **Protocol Analysis:** Analyze specific protocols in use and see how they communicate. This can help in debugging issues or understanding potential vulnerabilities.
+
+Wireshark is an invaluable tool for network administrators, security professionals, and anyone needing in-depth network analysis. It provides a granular view of network traffic and helps in diagnosing and understanding network-related issues.
+
+## **Analyzing the Network Layer with Wireshark**
+
+When we perform network analysis, understanding how data flows through the OSI (Open Systems Interconnection) model's layers is crucial. Wireshark provides the capability to capture and analyze packets at various layers, giving us insight into what is happening on the network. 
+
+### **Identifying the Network Interface**
+
+First, we need to determine which network interface is active and relevant to our analysis. We can use the `ifconfig` command to list all network interfaces and their configurations. In your case, the active interface is `wlan0`, which is a wireless network interface. Here's what the `ifconfig` output shows:
+
+```bash
+┌──(root㉿neo)-[~]
+└─# ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 4977  bytes 250084 (244.2 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4977  bytes 250084 (244.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.8  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::659d:1749:2c8b:417  prefixlen 64  scopeid 0x20<link>
+        ether 50:c2:e8:43:93:3b  txqueuelen 1000  (Ethernet)
+        RX packets 1905919  bytes 2321521463 (2.1 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 281162  bytes 46011062 (43.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+The output indicates that `wlan0` is the active interface with IP `192.168.1.8`. This is the interface we'll focus on for our Wireshark analysis.
+
+![[Pasted image 20240811115406.png]]
+
+### **Choosing the Network Interface in Wireshark**
+
+Once you know your active interface, you can start Wireshark and select `wlan0` as the interface to monitor. This is done from the interface selection screen in Wireshark:
+1. Select `wlan0` from the list of interfaces.
+
+![[Pasted image 20240811115805.png]]
+
+![[Pasted image 20240811120135.png]]
+
+2. Start capturing packets by clicking on the start button.
+### **Performing Nmap Scan and Monitoring with Wireshark**
+
+Now, with Wireshark capturing traffic on `wlan0`, you can run an Nmap scan on your target IP. This scan will generate network traffic that Wireshark will capture. As the scan progresses, Wireshark will display packets associated with the Nmap scanning process, showing the interaction between your system and the target.
+
+![[Pasted image 20240811121055.png]]
+### **Analyzing the Scanned Traffic**
+
+The Nmap scan interacts with the target using the OSI model layers, primarily focusing on the network and transport layers.
+
+- **OSI Model Layers:**
+  - **Layer 1 (Physical):** Deals with the hardware transmission of raw data over physical media.
+  - **Layer 2 (Data Link):** Manages communication between adjacent network nodes and deals with MAC addresses.
+  - **Layer 3 (Network):** Handles routing and forwarding, using IP addresses.
+  - **Layer 4 (Transport):** Manages end-to-end communication, often using TCP or UDP.
+  - **Layer 7 (Application):** Where protocols like HTTP, FTP, and DNS operate.
+
+In Wireshark, you'll see the packets traversing these layers:
+
+- **Ethernet (Layer 2):** Frames that include MAC addresses for source and destination.
+- **IP (Layer 3):** Contains IP addresses and handles the routing of packets.
+- **TCP/UDP (Layer 4):** Manages the establishment of connections and the transfer of data.
+- **Application Layer (Layer 7):** Where protocols like HTTP or HTTPS operate.
+
+### **Example Wireshark Capture Analysis**
+
+1. **Ethernet Frame:**
+   - Source MAC: Your device’s MAC address.
+   - Destination MAC: Target's MAC address.
+
+2. **IP Packet:**
+   - Source IP: `192.168.1.8` (your machine).
+   - Destination IP: Target IP (e.g., `192.168.1.4`).
+
+3. **TCP/UDP Segment:**
+   - Source Port: Random port chosen by your machine.
+   - Destination Port: The port you're scanning (e.g., 80, 443).
+
+4. **Application Data:**
+   - Actual data exchanged (e.g., HTTP requests/responses if scanning an HTTP service).
+
+Wireshark will show each layer in a hierarchical structure, allowing you to drill down into the specifics of the network interaction.
+
+### **Interpreting the Data**
+
+By analyzing the captured data, you can:
+
+- **Identify Open Ports:** Confirm what services are running on the target machine.
+- **Understand Network Behavior:** See how your machine interacts with the network during the scan.
+- **Spot Anomalies:** Look for unusual patterns or unexpected responses that could indicate security issues.
 
