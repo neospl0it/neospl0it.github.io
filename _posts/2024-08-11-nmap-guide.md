@@ -202,7 +202,7 @@ Replace `<network-address>/24` with your network’s address. For instance, if y
 nmap -sn 192.168.1.0/24
 ```
 
-**Example Output:**
+**Output:**
 
 ```bash
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-08-11 10:10 IST
