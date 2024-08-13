@@ -38,7 +38,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
 
-![Pasted image 20240725103202](https://github.com/user-attachments/assets/332134d6-4e51-4a61-b818-87c4bba37396)
+![image](https://github.com/user-attachments/assets/a5547d1d-f9ea-4a19-bbb8-b2f2e854adfe)
 
 **Ans:**
 ```
