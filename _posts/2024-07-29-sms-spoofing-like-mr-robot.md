@@ -24,6 +24,12 @@ curl -X POST https://textbelt.com/text \
 --data-urlencode message='Your spoofed message here' \
 -d key=your_api_key
 ```
+### Explanation:
+
+- `curl -X POST`: Initiates a POST request to the specified URL, in this case, an SMS gateway API.
+- `--data-urlencode phone='Victim's Phone Number'`: Specifies the phone number to which the spoofed SMS will be sent.
+- `--data-urlencode message='Your spoofed message here'`: Contains the text content of the SMS message, which can be manipulated to deceive the recipient.
+- `-d key=your_api_key`: An API key used to authenticate with the SMS service, usually obtained after registering with the provider.
 
 ## How it Works:
 
