@@ -4,7 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Who the hell are you and why you are talking to me 🤨
+# **$ Whoami**
+
 
 **About Me:**
 
