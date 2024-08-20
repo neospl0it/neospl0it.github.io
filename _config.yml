@@ -35,12 +35,13 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: neosploit
-  email: example@domain.com # change to your email address
+  email: nijithwilson@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/neospl0it # change to your twitter homepage
     - https://github.com/neospl0it # change to your github homepage
     - https://www.linkedin.com/in/nijithwilson
+    - https://discord.gg/YSBfz3JnNE
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
 
