@@ -550,3 +550,97 @@ For more examples and comprehensive lists of Google dorks, you can explore the f
 
 This GitHub repository contains a collection of Google dorks and search techniques useful for various purposes, including information gathering, security assessments, and more. It’s a valuable resource for anyone looking to expand their knowledge and use of advanced search queries.
 
+
+## Bug Bounty Using Google Dorking
+
+Google Dorking can be a powerful tool for bug bounty hunters, helping to uncover hidden or sensitive information that may be inadvertently exposed online. By crafting specific search queries, you can identify vulnerable systems, exposed data, or misconfigured pages. Here’s how you can use Google Dorking effectively for bug bounty reconnaissance.
+
+### Finding Apache2 Default Pages
+
+Default pages from Apache2 installations are often targeted by bug bounty hunters because they can reveal misconfigurations or unprotected systems. Here’s how to use Google Dorking to locate these pages:
+
+1. **Basic Search:**
+
+   Start with a straightforward query to find default Apache2 pages:
+
+   ```
+   intitle:Apache2 Debian Default Page
+   ```
+
+   This search targets pages with "Apache2 Debian Default Page" in the title, which is a common default page for Apache2 installations on Debian systems.
+
+   ![Initial Search Results](bimgs/google-dorking/bb-1.png)  
+   *Search results showing pages with the default Apache2 title.*
+
+2. **Refining with Quotation Marks:**
+
+   If the basic search results are limited, refine your query by using quotation marks to ensure an exact match for the phrase:
+
+   ```
+   intitle:"Apache2 Debian Default Page"
+   ```
+
+   Quotation marks help Google find pages with the exact title, which can yield more comprehensive results.
+
+   ![Refined Search Results](bimgs/google-dorking/bb-2.png)  
+   *Refined search results displaying the exact match for the title.*
+
+3. **Targeting Specific Domains:**
+
+   To narrow down the search to pages within a particular domain or country code top-level domain (ccTLD), use the `site:` operator. For example, to find pages within the `.uk` domain:
+
+   ```
+   site:.uk intitle:"Apache2 Debian Default Page"
+   ```
+
+   This query filters results to `.uk` domains, which can be useful for targeting specific geographic regions.
+
+   ![Country-Specific Search Results](bimgs/google-dorking/bb-3.png)  
+   *Search results limited to `.uk` domains.*
+
+#### Country Code Top-Level Domains (ccTLDs)
+
+For more targeted searches, you can use country-specific top-level domains (ccTLDs). Here’s a link to a comprehensive list of ccTLDs: [Wikipedia’s Country Code Top-Level Domain List](https://en.wikipedia.org/wiki/Country_code_top_level_domain).
+
+### Finding Exposed Git Files (Directory Listing)
+
+Exposed Git files or repositories can be a significant security risk, as they may reveal source code, configuration files, or other sensitive information. Google Dorking can help you locate these exposed Git directories by searching for specific directory listings.
+
+### Search Query
+
+To find exposed Git files or repositories through directory listings, use the following query:
+
+```
+intitle:"index of" inurl:.git
+```
+
+### Explanation
+
+- **`intitle:"index of"`**: Searches for pages with "index of" in the title, which is commonly associated with directory listings on web servers.
+- **`inurl:.git`**: Filters results to URLs containing ".git," which often indicates the presence of Git repositories.
+
+### Example Result
+
+![Directory Listing Result](bimgs/google-dorking/bb-4.png)  
+*Search results showing exposed Git directories with "index of" in the title.*
+
+![Directory Lisiting on a website](bimgs/google-dorking/bb-5.png)
+*Example of a directory listing page revealing exposed Git files.*
+
+### Finding Configuration Files
+
+  For discovering exposed configuration files, you can use a similar approach. For example:
+
+  ```
+  intitle:"index of" inurl:config
+  ```
+
+  ![FTP Config Files](bimgs/google-dorking/bb-6.png)  
+  *Example of finding sensitive information like FTP configuration files with usernames and passwords, as well as database files.*
+
+### Use Cases
+
+- **Security Assessment**: Identifying exposed Git directories can help in assessing the security posture of a target and discovering potentially sensitive files.
+- **Reconnaissance**: Useful for gathering information about a target’s codebase or configuration, which might be inadvertently exposed.
+- **Vulnerability Research**: Helps in finding vulnerabilities that may be present in publicly accessible Git repositories.
+
