@@ -492,6 +492,56 @@ inurl:keyword
 
 Using the `inurl:` operator allows you to efficiently identify URLs that contain particular keywords, aiding in security assessments, information gathering, and research.
 
+Here is a table with 50 **Google Dorking operators** and their descriptions along with example usage:
+
+| **Operator**   | **Description** | **Example** |
+|----------------|-----------------|-------------|
+| `cache:`       | Shows Google’s cached version of a page | `cache:nytimes.com` |
+| `related:`     | Finds websites related to a specific domain | `related:bbc.com` |
+| `-` (exclude)  | Excludes results containing a specific word | `tesla -model 3` |
+| `OR`           | Finds pages containing either of two terms | `security OR cybersecurity` |
+| `*` (wildcard) | Replaces unknown or variable words in a search phrase | `"cybersecurity * challenges"` |
+| `allintitle:`  | Searches for multiple words in the title | `allintitle:cybersecurity attack` |
+| `allinurl:`    | Searches for multiple words in the URL | `allinurl:admin login` |
+| `allintext:`   | Searches for multiple words in the body text | `allintext:password confidential` |
+| `around(x)`    | Finds words near each other within "x" words | `cybersecurity AROUND(5) attack` |
+| `define:`      | Displays the definition of a word | `define:hacking` |
+| `numrange:`    | Searches within a range of numbers | `laptops $500..$1000` |
+| `before:`      | Finds pages published before a specific year | `cybersecurity before:2015` |
+| `after:`       | Finds pages published after a specific year | `AI after:2020` |
+| `author:`      | Finds posts or articles by a specific author | `author:john_doe` |
+| `daterange:`   | Finds results within a specific date range (Julian dates) | `daterange:2459101-2459151` |
+| `info:`        | Provides information about a website | `info:wikipedia.org` |
+| `inanchor:`    | Searches for words in the anchor text of links | `inanchor:buy books` |
+| `location:`    | Filters news results by a specific location | `location:New York` |
+| `stocks:`      | Provides stock information about a company | `stocks:AAPL` |
+| `source:`      | Searches within a specific news source | `source:bbc.com` |
+| `ext:`         | Similar to `filetype:`, searches for file extensions | `ext:doc confidential` |
+| `map:`         | Finds maps related to the query | `map:Paris` |
+| `weather:`     | Displays weather results for a location | `weather:London` |
+| `movie:`       | Shows movie listings or info for a location | `movie:New York` |
+| `phonebook:`   | Searches for phone numbers (less effective now) | `phonebook:John Doe` |
+| `bphonebook:`  | Searches for business phone numbers | `bphonebook:plumber` |
+| `rphonebook:`  | Searches for residential phone numbers | `rphonebook:Jane Doe` |
+| `safesearch:`  | Forces safe search for results | `safesearch:hacking` |
+| `insubject:`   | Finds words in the subject of a webpage | `insubject:AI future` |
+| `sitemap:`     | Finds sitemap pages for a website | `sitemap:wikipedia.org` |
+| `group:`       | Restricts search to a particular Google Group | `group:rec.humor.funny` |
+| `cache-date:`  | Finds cached versions of a page from a specific date | `cache-date:2022-07-15 example.com` |
+| `isbn:`        | Searches for books using their ISBN | `isbn:9780134685991` |
+| `inmeta:`      | Searches in the metadata of a page | `inmeta:author name` |
+| `insubject:`   | Searches for words in the subject (useful in Google Groups) | `insubject:cybersecurity` |
+| `inbook:`      | Finds references within books on Google Books | `inbook:machine learning` |
+| `inposttitle:` | Searches for words in blog post titles | `inposttitle:cybersecurity tips` |
+| `intags:`      | Searches for keywords within a site's meta tags | `intags:security` |
+| `ip:`          | Searches for sites hosted on a specific IP address | `ip:192.168.1.1` |
+| `book:`        | Finds books related to a topic or title | `book:artificial intelligence` |
+| `place:`       | Finds places related to the query | `place:restaurants` |
+| `maps:`        | Displays results related to maps for a location | `maps:Berlin` |
+| `patents:`     | Searches for patents related to the query | `patents:renewable energy` |
+| `news:`        | Filters search results to show only news articles | `news:cybersecurity` |
+
+
 ## Additional Resources
 
 For more examples and comprehensive lists of Google dorks, you can explore the following resource:
