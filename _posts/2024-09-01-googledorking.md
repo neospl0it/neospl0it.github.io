@@ -440,6 +440,58 @@ To search for pages that link to a particular URL or domain, use the following f
 
 By leveraging the `link:` operator, you can gain valuable insights into backlinks and references, although it's important to be aware of its limitations and complement it with other tools and techniques for comprehensive analysis.
 
+## Using the `inurl:` Operator
+
+The **`inurl:`** operator in Google Dorking is a powerful tool for searching pages that contain a specific term within their URL. This operator is particularly useful for discovering pages with certain directory structures, admin panels, or login pages.
+
+### Purpose
+
+- **Searches for Pages with Specific Terms in the URL**: Helps find web pages where a particular term appears in the URL.
+
+### Syntax
+
+To use the `inurl:` operator, use the following format:
+
+```
+inurl:keyword
+```
+
+### Example Usage
+
+1. **Finding Admin Panels:**
+
+   To locate pages that likely contain admin panels by searching for URLs with the term **"admin"**, use:
+
+   ```
+   inurl:admin
+   ```
+
+   **Result:**  
+   This query will return pages where "admin" appears in the URL, such as `example.com/admin` or `example.com/wp-admin`. This can help identify administrative interfaces that might be accessible.
+
+2. **Finding Login Pages:**
+
+   To locate login pages by searching for URLs with the term **"login"**, use:
+
+   ```
+   inurl:login
+   ```
+   
+   ![Result-INURL-Login](bimgs/google-dorking/inurl-login-result.png)  
+   *This query returns pages with "login" in the URL, such as `example.com/login` or `example.com/user-login`. This is useful for locating authentication pages.*
+
+### Use Cases
+
+- **Finding Admin Panels**: Useful for locating administrative interfaces of websites, which can be crucial for security assessments or research.
+- **Discovering Login Pages**: Helps in identifying login pages across various websites, beneficial for penetration testing or vulnerability assessments.
+- **Locating Specific Directories**: Useful for finding pages related to particular directory structures or file management.
+
+### Summary
+
+- **`inurl:` Operator**: Focuses on finding pages that include a specific term within their URL, making it effective for locating pages related to admin interfaces, login pages, or specific directories.
+
+Using the `inurl:` operator allows you to efficiently identify URLs that contain particular keywords, aiding in security assessments, information gathering, and research.
+
 ## Additional Resources
 
 For more examples and comprehensive lists of Google dorks, you can explore the following resource:
