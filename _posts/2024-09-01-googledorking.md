@@ -233,7 +233,7 @@ Similarly, if you want to search for pages containing the word **"confidential"*
 site:.edu intext:confidential
 ```
 
-[Intext-Result-1](bimgs/google-dorking/intext-result-1.png)  
+![Intext-Result-1](bimgs/google-dorking/intext-result-1.png)  
 *Example results showing pages where "login" or "confidential" appears in the content.*
 
 ### Breakdown:
