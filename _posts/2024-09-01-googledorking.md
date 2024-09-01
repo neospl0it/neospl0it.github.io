@@ -407,8 +407,8 @@ To search for pages that link to a particular URL or domain, use the following f
    link:tesla.com site:.in
    ```
 
-   ![Link-Result-In](bimgs/google-dorking/link-result-in.png)  
-   This query returns pages on `.in` domains that contain links to **tesla.com**.
+   ![Link-Result-In](bimgs/google-dorking/link-result-in.png)
+   *This query returns pages on `.in` domains that contain links to **tesla.com**.*
 
 2. **Finding Bug Bounty Reports:**
 
@@ -419,7 +419,7 @@ To search for pages that link to a particular URL or domain, use the following f
    ```
 
    ![Link-Result-Bugcrowd](bimgs/google-dorking/link-result-bugcrowd.png)  
-   This query identifies pages on Bugcrowd that reference or link to Tesla’s domain, helping you discover relevant bug reports or discussions.
+   *This query identifies pages on Bugcrowd that reference or link to Tesla’s domain, helping you discover relevant bug reports or discussions.*
 
 ### How It Works
 
