@@ -397,12 +397,6 @@ The **`link:`** operator in Google search is used to find web pages that contain
 
 To search for pages that link to a particular URL or domain, use the following format:
 
-```
-link:URL
-```
-
-You can also combine it with the `site:` operator to narrow down your search to specific domains.
-
 ### Example Usage
 
 1. **Finding Links to Tesla on Specific Domains:**
