@@ -8,8 +8,6 @@ image:
   path: thbnls/dorking.png
 ---
 
-This front matter provides a concise overview of your presentation on Google Dorking, categorizing it appropriately and adding relevant tags to improve discoverability. Let me know if you need any adjustments or additional sections!
-
 ## What is Google Dorking?
 
 **Google Dorking**, also known as **Google Hacking**, refers to using advanced search techniques on Google (or other search engines) to find specific information that is not easily accessible through normal queries. By utilizing **special search strings** (called **Google dorks**), you can apply operators like `site:`, `filetype:`, and `intitle:` to filter and refine search results. This can sometimes unintentionally expose **sensitive information**, **vulnerabilities**, or **files** that were never meant to be publicly available.
