@@ -152,7 +152,7 @@ Can help locate **directory listings** or **file directories** that might be pub
 Understanding the context in which these directories are used is important for both security analysis and web development. 
 
 
-### Using the `address:` Operator
+## Using the `address:` Operator
 
 The `address:` operator isn’t a standard search operator in Google, but you can use specific techniques and operators to find addresses or locations effectively. Here's how you can achieve similar results:
 
@@ -223,7 +223,7 @@ The `address:` operator isn’t a standard search operator in Google, but you ca
 
 Using these strategies, you should be able to find addresses, locations, and specific subdomains effectively even without the `address:` operator.
 
-### Using the `intext:` Operator
+## Using the `intext:` Operator
 
 The **`intext:`** operator in Google Dorking is used to find pages that contain specific words or phrases within the body of the text on the page. This operator helps you locate pages where a particular term appears in the content, rather than in the title or URL.
 
@@ -277,7 +277,7 @@ site:.edu intext:confidential
 This query will filter results to educational domains where "confidential" is mentioned within the page content.
 
 
-### Comparing `intitle:` vs `intext:` Operators
+## Comparing `intitle:` vs `intext:` Operators
 
 When performing advanced searches using Google Dorking, understanding the difference between the **`intitle:`** and **`intext:`** operators is crucial for refining your search results effectively. Both operators are used to filter search results based on the presence of specific terms, but they focus on different parts of a web page.
 
@@ -308,7 +308,6 @@ site:.com intitle:login
 ```
 This would show results with "login" in the title from `.com` domains.
 
----
 
 #### `intext:` Operator
 
@@ -342,3 +341,174 @@ This would show results from `.com` domains where "login" appears somewhere in t
 - **`intext:`**: Filters results based on keywords in the **body text** of the page, useful for finding pages where the term appears anywhere in the content.
 
 Both operators serve distinct purposes and can be used together or separately depending on the specificity of your search requirements.
+
+## Using the `filetype:` Operator
+
+The **`filetype:`** operator in Google Dorking helps you locate specific types of files on the web by filtering search results to include only files with a particular extension. This operator is useful for finding documents, spreadsheets, presentations, and other types of files.
+
+#### How to Use `filetype:`
+
+To find files of a specific type, use the following syntax:
+
+```
+filetype:extension keyword
+```
+
+- **`extension`**: The file extension you are searching for (e.g., pdf, docx, xls).
+- **`keyword`**: The term or phrase you want to find within those files.
+
+#### Example Usage
+
+1. **Finding PDF Files:**
+
+   To locate PDF files related to **"cybersecurity"**, use:
+
+   ```
+   filetype:pdf cybersecurity
+   ```
+
+   This query will return PDF documents that include the term **"cybersecurity"**.
+
+2. **Finding Word Documents:**
+
+   To find DOCX files mentioning **"project plan"**, use:
+
+   ```
+   filetype:docx project plan
+   ```
+
+   This will return DOCX files containing the phrase **"project plan"**.
+
+3. **Finding Excel Spreadsheets:**
+
+   To search for Excel files related to **"financial reports"**, use:
+
+   ```
+   filetype:xls financial reports
+   ```
+
+   This query will display Excel spreadsheets that mention **"financial reports"**.
+
+#### How It Works
+
+- **`filetype:` Operator**: Filters search results to include files with a specific extension.
+- **Keyword**: The term or phrase that should be present in the file content.
+
+#### Use Cases
+
+- **Finding Specific Documents**: Useful for locating particular types of documents, such as technical reports, academic papers, or business plans.
+- **Research and Data Gathering**: Helps in accessing detailed information or datasets often stored in file formats like PDF, DOCX, or XLS.
+- **Security and Vulnerability Assessment**: Identifies exposed documents or files on the web that may contain sensitive or confidential information.
+
+### Additional Examples
+
+- **Finding PowerPoint Presentations:**
+
+  To find PowerPoint presentations related to **"marketing strategy"**:
+
+  ```
+  filetype:pptx marketing strategy
+  ```
+
+- **Finding Text Files:**
+
+  To search for TXT files containing **"user guide"**:
+
+  ```
+  filetype:txt user guide
+  ```
+
+- **Finding CSV Files:**
+
+  For discovering CSV files that might contain data, you can use:
+
+  ```
+  filetype:csv data
+  ```
+
+  Many sites store data in CSV format, so this query can help find potentially sensitive information. For example:
+
+  ![Result8](bimgs/result8.png)
+
+
+### Using the `link:` Operator
+
+The **`link:`** operator in Google search is designed to find web pages that contain links to a specific URL or domain. This operator is useful for identifying which sites are linking back to a particular page or domain.
+
+#### How to Use `link:`
+
+To find pages that link to a specific URL or domain, use:
+
+```
+link:URL_or_domain
+```
+
+- **`URL_or_domain`**: The URL or domain you want to find links to.
+
+#### Example Usage
+
+1. **Finding Pages Linking to Tesla:**
+
+   To find pages that link to **tesla.com**, use:
+
+   ```
+   link:tesla.com
+   ```
+
+   This query will return pages that have hyperlinks pointing to Tesla’s domain.
+
+2. **Finding Links to Tesla on Specific Domains:**
+
+   To find pages linking to Tesla that are hosted on a specific domain (e.g., `.in`), use:
+
+   ```
+   link:tesla.com site:.in
+   ```
+
+   This query will show pages on `.in` domains that contain links to **tesla.com**.
+
+3. **Finding Bug Bounty Reports:**
+
+   To find bug bounty reports or discussions related to Tesla on Bugcrowd, use:
+
+   ```
+   link:tesla.com site:bugcrowd.com
+   ```
+
+   This query will locate pages on Bugcrowd that reference or link to Tesla’s domain, helping you discover relevant bug reports or discussions.
+
+### How It Works
+
+- **`link:` Operator**: Searches for pages that include links to the specified URL or domain.
+- **`site:` Operator**: Limits the search to pages within a specific domain or domain type (e.g., `.in` or `bugcrowd.com`).
+
+### Use Cases
+
+- **SEO and Backlink Analysis**: Helps SEO professionals to find backlinks to a website, providing insights into which domains are linking to their content.
+- **Competitive Research**: Useful for analyzing backlinks to competitors' websites, which can offer insights into their link-building strategies.
+- **Discovering References**: Valuable for tracking which pages reference or cite a specific page, aiding in measuring the influence and reach of content.
+- **Bug Bounty Reconnaissance**: Assists in locating bug bounty reports or discussions related to a target domain on platforms like Bugcrowd.
+
+### Example:
+
+To identify pages on Indian domains that link to Tesla’s website:
+
+```
+link:tesla.com site:.in
+```
+
+This query helps find `.in` sites that contain links to Tesla, potentially revealing regional references or mentions.
+
+### Limitations
+
+- **Inconsistent Results**: Google may not provide a complete list of all links to a URL, and the `link:` operator may not return all relevant pages.
+- **Operator Deprecation**: The effectiveness of the `link:` operator has diminished over time, with less comprehensive results compared to its past functionality.
+
+## Additional Resources
+
+For more examples and comprehensive lists of Google dorks, you can explore the following resource:
+
+- **[Dorks Repository](https://github.com/neospl0it/Dorks.git)**
+
+This GitHub repository contains a collection of Google dorks and search techniques useful for various purposes, including information gathering, security assessments, and more. It’s a valuable resource for anyone looking to expand their knowledge and use of advanced search queries.
+
