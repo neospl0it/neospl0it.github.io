@@ -12,6 +12,12 @@ image:
 
 **Google Dorking**, also known as **Google Hacking**, refers to using advanced search techniques on Google (or other search engines) to find specific information that is not easily accessible through normal queries. By utilizing **special search strings** (called **Google dorks**), you can apply operators like `site:`, `filetype:`, and `intitle:` to filter and refine search results. This can sometimes unintentionally expose **sensitive information**, **vulnerabilities**, or **files** that were never meant to be publicly available.
 
+### Real-World Applications
+
+- **Bug Bounty Hunting**: Finding vulnerabilities like open directories or misconfigured security settings.
+- **OSINT**: Gathering public data about individuals or companies.
+- **Cybersecurity Audits**: Identifying unprotected files or sensitive information that may be publicly accessible due to misconfigura
+
 ### Example: Searching for "Tesla"
 
 In a basic Google search for "Tesla," you see a variety of results related to the company, its cars, news, and more:
