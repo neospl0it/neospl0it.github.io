@@ -19,7 +19,7 @@ In a basic Google search for "Tesla," you see a variety of results related to th
 ![Result1](bimgs/result1.png) 
 *This shows a standard Google search result page for the term "Tesla."*
 
-#### Narrowing Down Results with Google Dorking
+### Narrowing Down Results with Google Dorking
 
 However, if you only want to view results that belong to Tesla's official domain, you can use the `site:` operator to focus on a specific domain.
 
@@ -57,6 +57,7 @@ Now, after applying the exclusion:
 
 ![Result4](bimgs/result4.png)   
 *As you can see, the "shop" subdomain results have been excluded from the search.*
+
 ### Explanation:
 
 - **`site:tesla.com`** — Limits the results to the main Tesla domain and its subdomains.
@@ -64,12 +65,32 @@ Now, after applying the exclusion:
 
 This technique is useful when you want to narrow down the results by removing irrelevant sections of a site, helping you focus on specific content.
 
+## Operators
+
+## Using Quotation Marks for Precise Searches
+
+In **Google Dorking**, you can use quotation marks (`""`) to search for **exact phrases** or words in the same order, ensuring more precise results. This is especially useful when you want to find pages containing specific text combinations or when exact matches are necessary.
+#### How to Use Quotation Marks
+
+To search for an exact phrase, place it within quotation marks:
+
+```
+"exact phrase"
+```
+
+Example By using the query:
+
+```
+site:.com intitle:"index of"
+```
+
+You can filter for pages across `.com` domains where the title exactly matches **"index of"**, often indicating exposed file directories or unprotected file structures on the web.
 
 ## Using the `intitle:` Operator
 
 The `intitle:` operator in **Google Dorking** is a powerful tool that lets you search for web pages containing a specific word or phrase within the **title** of the page. The **title** refers to the text within the `<title>` HTML tag, which appears in both the browser tab and search engine results.
 
-#### How to Use `intitle:`
+### How to Use `intitle:`
 
 To target pages with a specific word in the title, you can structure your query as follows:
 
@@ -110,24 +131,6 @@ Here, you can see the relevant portion of the code:
 
 Because "Login" is in the title of this page, it shows up in your search results using the `intitle:login` query.
 
-
-#### How to Use Quotation Marks
-
-To search for an exact phrase, place it within quotation marks:
-
-```
-"exact phrase"
-```
-
-Example By using the query:
-
-```
-site:.com intitle:"index of"
-```
-
-You can filter for pages across `.com` domains where the title exactly matches **"index of"**, often indicating exposed file directories or unprotected file structures on the web.
-
-
 ### Finding Open Directories
 
 Using the query:
@@ -141,7 +144,7 @@ Can help locate **directory listings** or **file directories** that might be pub
 ![Result7](bimgs/result7.png)   
 *Example of search results showing pages with "index of" in the title, often indicating open directories.*
 
-#### Potential Uses and Implications
+### Potential Uses and Implications
 
 - **Vulnerabilities**: Open directories can expose sensitive files or information unintentionally. This can be a security risk if not properly secured.
   
@@ -225,7 +228,7 @@ Using these strategies, you should be able to find addresses, locations, and spe
 
 The **`intext:`** operator in Google Dorking is used to find pages that contain specific words or phrases within the body of the text on the page. This operator helps you locate pages where a particular term appears in the content, rather than in the title or URL.
 
-#### How to Use `intext:`
+### How to Use `intext:`
 
 To find pages containing a specific keyword or phrase in the text, use the following format:
 
@@ -233,7 +236,7 @@ To find pages containing a specific keyword or phrase in the text, use the follo
 intext:keyword
 ```
 
-#### Example Usage
+### Example Usage
 
 If you want to find pages across `.com` domains where the term **"login"** appears in the body text, you can use:
 
@@ -279,7 +282,7 @@ This query will filter results to educational domains where "confidential" is me
 
 When performing advanced searches using Google Dorking, understanding the difference between the **`intitle:`** and **`intext:`** operators is crucial for refining your search results effectively. Both operators are used to filter search results based on the presence of specific terms, but they focus on different parts of a web page.
 
-#### `intitle:` Operator
+### `intitle:` Operator
 
 - **Purpose**: Searches for pages with specific words or phrases in the **title** of the page.
 - **Usage**: Use this operator when you want to find pages where the keyword or phrase appears in the title, which is often a summary of the page content.
@@ -307,7 +310,7 @@ site:.com intitle:login
 This would show results with "login" in the title from `.com` domains.
 
 
-#### `intext:` Operator
+### `intext:` Operator
 
 - **Purpose**: Searches for pages that contain specific words or phrases in the **body text** of the page.
 - **Usage**: Use this operator when you want to find pages where the keyword or phrase appears anywhere within the content of the page.
@@ -333,6 +336,7 @@ To find pages discussing login procedures or information, you might search:
 site:.com intext:login
 ```
 This would show results from `.com` domains where "login" appears somewhere in the body text.
+
 ### Summary
 
 - **`intitle:`**: Filters results based on keywords in the **title** of the page, often yielding results where the term is central to the page’s content or purpose.
@@ -344,7 +348,7 @@ Both operators serve distinct purposes and can be used together or separately de
 
 The **`filetype:`** operator in Google Dorking helps you locate specific types of files on the web by filtering search results to include only files with a particular extension. This operator is useful for finding documents, spreadsheets, presentations, and other types of files.
 
-#### How to Use `filetype:`
+### How to Use `filetype:`
 
 To find files of a specific type, use the following syntax:
 
@@ -355,7 +359,7 @@ filetype:extension keyword
 - **`extension`**: The file extension you are searching for (e.g., pdf, docx, xls).
 - **`keyword`**: The term or phrase you want to find within those files.
 
-#### Example Usage
+### Example Usage
 
 1. **Finding PDF Files:**
 
@@ -387,12 +391,12 @@ filetype:extension keyword
 
    This query will display Excel spreadsheets that mention **"financial reports"**.
 
-#### How It Works
+### How It Works
 
 - **`filetype:` Operator**: Filters search results to include files with a specific extension.
 - **Keyword**: The term or phrase that should be present in the file content.
 
-#### Use Cases
+### Use Cases
 
 - **Finding Specific Documents**: Useful for locating particular types of documents, such as technical reports, academic papers, or business plans.
 - **Research and Data Gathering**: Helps in accessing detailed information or datasets often stored in file formats like PDF, DOCX, or XLS.
@@ -429,11 +433,11 @@ filetype:extension keyword
   ![Result8](bimgs/result8.png)
 
 
-### Using the `link:` Operator
+## Using the `link:` Operator
 
 The **`link:`** operator in Google search is designed to find web pages that contain links to a specific URL or domain. This operator is useful for identifying which sites are linking back to a particular page or domain.
 
-#### How to Use `link:`
+### How to Use `link:`
 
 To find pages that link to a specific URL or domain, use:
 
@@ -443,7 +447,7 @@ link:URL_or_domain
 
 - **`URL_or_domain`**: The URL or domain you want to find links to.
 
-#### Example Usage
+### Example Usage
 
 1. **Finding Pages Linking to Tesla:**
 
