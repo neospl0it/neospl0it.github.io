@@ -638,6 +638,7 @@ intitle:"index of" inurl:.git
   ![FTP Config Files](bimgs/google-dorking/bb-6.png)  
   *Example of finding sensitive information like FTP configuration files with usernames and passwords, as well as database files.*
 
+
 ### Use Cases
 
 - **Security Assessment**: Identifying exposed Git directories can help in assessing the security posture of a target and discovering potentially sensitive files.
