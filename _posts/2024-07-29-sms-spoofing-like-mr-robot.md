@@ -3,7 +3,7 @@ title: "SMS Spoofing Like Mr. Robot"
 description: "A comprehensive guide to executing SMS spoofing using the `curl` command, inspired by techniques depicted in 'Mr. Robot'."
 date: 2024-07-29
 categories: [Spoofing, SMS]
-tags: [SMS-Spoofing, curl]
+tags: [sms-spoofing, curl]
 image:
   path: thbnls/sms.png
 ---
