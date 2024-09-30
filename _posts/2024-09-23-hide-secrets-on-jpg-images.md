@@ -112,5 +112,3 @@ This code will extract the hidden file from the JPG and write it to a new file c
 - **Cross-Platform:** Can be implemented using basic tools available on all platforms.
   
 This easy method of encrypting data and messages within JPG pictures might be a fun way to get started with steganography. You can simply inject and retrieve secret data by using Python and a hex editor such as `ghex` . This technique shows how to cleverly change files, however it is not very safe for sensitive information (because anybody with knowledge of the file structure may simply retrieve the hidden data).
-
-

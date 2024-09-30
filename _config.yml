@@ -19,7 +19,7 @@ title: NEOSPLOIT # the main title
 tagline: Learn & Earn # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  The top blog for cybersecurity, OSINT, red teaming, malware analysis, and CTF write-ups.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -63,7 +63,7 @@ analytics:
   google:
     id: G-6XD54070Q0 # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: neosploit # your GoatCounter site code
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,8 @@ analytics:
 
 # Pageviews settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
+
 
 # Prefer color scheme setting.
 #
