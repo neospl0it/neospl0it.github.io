@@ -11,7 +11,9 @@ image:
 
 The Linux file system is not just a simple repository of files and directories. It's an intricate and organized labyrinth, constructed with both efficiency and versatility in mind. For system administrators, developers, and power users, mastering its design is essential to unlocking the true power of the Linux operating system. In this guide, we’ll unravel the nuances of the Linux root directory, peering into its myriad subdirectories and deciphering their often concealed purposes.
 
-![Root Directory Structure](https://cdn-images-1.medium.com/max/1100/1*sT7thq5vwczsGUCDYS2QJQ.png)
+![linux](bimgs/linux-filesystem/filesytem-dark.png){: .dark }
+![linux](bimgs/linux-filesystem/filesytem-light.png){: .light }
+
 
 ### **The Root Directory (`/`) – The Grand Entryway**
 

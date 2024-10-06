@@ -44,8 +44,8 @@ Once installed, open a JPG file in `ghex`:
 ```bash
 ghex image.jpg
 ```
-![A hidden message being extracted from a JPG file using Python code.](bimgs/ghex-steg-dark.png){: .dark }
-![A hidden message being extracted from a JPG file using Python code.](bimgs/ghex-steg-light.png){: .light }
+![A hidden message being extracted from a JPG file using Python code.](bimgs/steganography/ghex-steg-dark.png){: .dark }
+![A hidden message being extracted from a JPG file using Python code.](bimgs/steganography/ghex-steg-light.png){: .light }
 
 Any content added after the `\FF\D9` marker will be ignored when displaying the image. However, it can still be extracted using a programmatic approach, such as Python.
 
