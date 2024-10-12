@@ -19,7 +19,7 @@ title: NEOSPLOIT # the main title
 tagline: Learn & Earn # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  The top blog for cybersecurity, OSINT, red teaming, malware analysis, and CTF write-ups.
+  Welcome to Neosploit, your ultimate resource for Capture The Flag (CTF) challenges and Open Source Intelligence (OSINT). Dive into comprehensive tutorials, expert tips, and engaging content that empowers you to sharpen your cybersecurity skills. Join our community to explore Hack The Box, TryHackMe, and VulnHub challenges, and elevate your hacking knowledge today!
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -41,8 +41,6 @@ social:
     - https://twitter.com/neospl0it # change to your twitter homepage
     - https://github.com/neospl0it # change to your github homepage
     - https://www.linkedin.com/in/nijithwilson
-    - https://discord.gg/YSBfz3JnNE
-    - https://buymeacoffee.com/neosploit
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
 
