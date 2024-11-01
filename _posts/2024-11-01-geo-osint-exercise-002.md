@@ -5,7 +5,7 @@ date: 2024-11-01
 categories: [OSINT ,GEO-OSINT]
 tags: [osint, geolocation, image analysis, train station identification, tallest building]
 image:  
-  path: thbnls/geo-osint-01.png
+  path: thbnls/geo-osint-02.png
 ---
 
 In this exercise, we're going to tackle a classic OSINT (Open Source Intelligence) challenge using only a shared image. The objective is simple yet intriguing: identify the train station and the tallest structure seen in the photograph. Let’s break down how we approached this, step-by-step.
@@ -58,16 +58,19 @@ Another skyscraper in the image that didn’t immediately appear on Google Earth
 To get a better look, zoomed out on Google Earth Pro and found it: **FOCUS Apartments by Central Equity**.
 
 #### Details of FOCUS Apartments:
+
 - **Height**: 166 meters (544 feet)
 - **Floors**: 50
 
 This discovery shifted our answer for the tallest building in the image, as **FOCUS Apartments** stands a few meters taller than Arts Centre Melbourne.
 
 ### Final Answer
+
 After a thorough investigation, here are the answers to our Geo-OSINT Exercise 002 questions:
 
 1. **Train Station**: Flinders Street Station, Melbourne, Australia
 2. **Tallest Structure**: FOCUS Apartments by Central Equity at 166 meters (544 feet)
+
 ### Wrapping Up
 
 This Geo-OSINT exercise exemplifies how we can leverage online mapping tools, geolocation techniques, and a keen eye for detail to uncover information about unfamiliar locations. Not only did we solve the mystery, but we also discovered how satellite imagery can sometimes hide details that require additional digging.
