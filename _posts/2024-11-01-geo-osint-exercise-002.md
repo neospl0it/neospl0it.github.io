@@ -32,6 +32,7 @@ With just these two questions, we set off on our Geo-OSINT adventure!
 *Google Maps result showing the Flinders Street Station name*
 
 After closely examining the image,  I was able to confirm that the train station seen in the photograph is **Flinders Street Station** in Melbourne, Australia.
+
 ### Determining the Tallest Structure
 
 Next, we needed to identify the tallest structure in the photo. 
