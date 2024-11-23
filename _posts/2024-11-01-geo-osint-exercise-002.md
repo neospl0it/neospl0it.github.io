@@ -77,3 +77,5 @@ After a thorough investigation, here are the answers to our Geo-OSINT Exercise 0
 This Geo-OSINT exercise exemplifies how we can leverage online mapping tools, geolocation techniques, and a keen eye for detail to uncover information about unfamiliar locations. Not only did we solve the mystery, but we also discovered how satellite imagery can sometimes hide details that require additional digging.
 
 Whether you’re just starting out in OSINT or you’re a seasoned pro, these exercises are great for honing your investigative skills. Ready to try the next one?
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="neosploit" data-description="Support me on Buy me a coffee!" data-message="Support me by buying a Book! Thank you!" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
