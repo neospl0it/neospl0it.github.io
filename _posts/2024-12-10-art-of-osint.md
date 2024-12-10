@@ -1294,7 +1294,7 @@ When engaging in Open-Source Intelligence (OSINT) or conducting activities onlin
 
 The OSINT process follows the broader **Intelligence Lifecycle**, which consists of several key stages:
 
-![OSINT Diagram](bimgs/osint-dgrm.png)
+![OSINT Diagram](/assets/img/bposts/osint-dgrm.png)
 
 1. **Planning and Direction**:
    - Defining the intelligence requirements and setting objectives.
