@@ -3,7 +3,7 @@ title: "ART OF OSINT : Whispers of the Web"
 description: "Discover the essential skills and tips to master OSINT, transforming your knowledge from beginner to expert with practical insights and guidance"
 date: 2024-12-10
 categories: [OSINT, Intelligence]
-tags: [osint, intelligence, sock-puppets, cybersecurity, human-intelligence, digital-footprint, internet-privacy]
+tags: [osint, intelligence, sock-puppets, human-intelligence, digital-footprint, internet-privacy]
 permalink: /posts/osint/
 image:
   path: assets/img/thumbnails/osint.png
