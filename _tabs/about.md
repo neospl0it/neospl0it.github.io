@@ -4,6 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+![](assets/img/about/about-dark.png){: .dark }
+![](assets/img/about/about-light.png){: .light }
+
 ## **$ Whoami ?**
 
 *Hi, I’m Nijith Wilson, a passionate newcomer in the field of cybersecurity, currently focusing on self-learning malware analysis, participating in CTFs, and expanding my expertise. I hold certifications including CEH v12 and ADCD, with plans to earn more in the near future.*
