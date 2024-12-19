@@ -110,7 +110,7 @@ Upon reaching **2 Main St**, we found an exact match based on the brass doors, l
 
 By comparing each feature carefully, we confirmed this match.
 
-![Final verification image matching doors and structural evidence](/ssets/img/bposts/geo-osint-jonny-lee-miller/matching-evidence.png)  
+![Final verification image matching doors and structural evidence](assets/img/bposts/geo-osint-jonny-lee-miller/matching-evidence.png)  
 *Image showing final comparison of visual evidence with 2 Main St, confirming the match with structural details and door configuration.*
 
 For anyone interested in seeing the location directly, here are the coordinates on Google Earth: [View Location on Google Earth](https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fDumbo,Brooklyn%2f%4040.70364365,-73.99066755,3.5919323a,0d,23.19280387y,95.97810916h,87.20963034t,0r%2fdata%3dCiwiJgokCbMtWBgfWkRAETpg86rxWURAGZTSBf06f1LAIRQxNl5jf1LAQgIIASIaChZFQkJ4LUZEbHdfaG1tYVg1VXpYZUZ3EAJCAggASg0I____________ARAA).
