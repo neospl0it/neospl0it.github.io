@@ -1,10 +1,10 @@
 ---
-title: "Master Google Dorking: Advanced Search Techniques for OSINT & Ethical Hacking"
+title: "Master Google Dorking: Advanced Techniques for OSINT and Ethical Hacking"
 description: "Learn Google Dorking techniques to uncover hidden web information. Master search operators, filtering tricks, and ethical hacking strategies for effective OSINT."
 date: 2024-12-25
 categories: [Google, Dorking]
 tags: [google-dorking, advanced-search, osint-tools, ethical-hacking, cybersecurity-skills, search-operators, hidden-web-data, google-hacking, advanced-osint, digital-investigation]
-permalink: /master-google-dorking-advanced-search-techniques
+permalink: /master-google-dorking-advanced-search-techniques.md
 image:
   path: /assets/img/thumbnails/dorking.png
 ---
