@@ -4,7 +4,7 @@ description: "Learn how to hide secrets in JPG images using Python and a hex edi
 date: 2024-09-23  
 categories: [Python, Steganography]  
 tags: [JPG, hex-editor, python, steganography, secrets] 
-permalink: /how-to-hide-secrets-in-jpg-using-python/
+permalink: /how-to-hide-secrets-in-jpg-using-python
 image:  
   path: /assets/img/thumbnails/steg.png
 ---

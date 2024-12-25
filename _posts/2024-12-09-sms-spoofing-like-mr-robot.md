@@ -4,7 +4,7 @@ description: "Learn SMS spoofing using the `curl` command, techniques like depic
 date: 2024-12-09
 categories: [Spoofing, SMS]
 tags: [sms-spoofing, curl]
-permalink: /sms-spoofing-using-curl-command/
+permalink: /sms-spoofing-using-curl-command
 image:
   path: /assets/img/thumbnails/sms.png
 ---
