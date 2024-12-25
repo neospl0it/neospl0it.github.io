@@ -4,7 +4,7 @@ description: "Learn Google Dorking techniques to uncover hidden web information.
 date: 2024-12-25
 categories: [Google, Dorking]
 tags: [google-dorking, advanced-search, osint-tools, ethical-hacking, cybersecurity-skills, search-operators, hidden-web-data, google-hacking, advanced-osint, digital-investigation]
-permalink: /master-google-dorking-advanced-search-techniques.html
+permalink: /master-google-dorking-advanced-search-techniques
 image:
   path: /assets/img/thumbnails/dorking.png
 ---
