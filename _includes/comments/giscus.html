@@ -1,11 +1,8 @@
+<!-- https://giscus.app/ -->
 <script>
   (function () {
-    const themeMapper = {
-      light: 'purple_dark',
-      dark: 'noborder_dark', // Set 'noborder_dark' for dark mode
-    };
-
-    const initTheme = themeMapper[Theme.visualState] || 'noborder_dark'; // Default to 'noborder_dark'
+    const themeMapper = Theme.getThemeMapper('purple_dark', 'noborder_dark');
+    const initTheme = themeMapper[Theme.visualState];
 
     let lang = '{{ site.comments.giscus.lang | default: lang }}';
     {%- comment -%} https://github.com/giscus/giscus/tree/main/locales {%- endcomment -%}
@@ -23,7 +20,7 @@
       'data-strict' : '{{ site.comments.giscus.strict | default: '0' }}',
       'data-reactions-enabled': '{{ site.comments.giscus.reactions_enabled | default: '1' }}',
       'data-emit-metadata': '0',
-      'data-theme': initTheme, // Apply the selected theme
+      'data-theme': initTheme,
       'data-input-position': '{{ site.comments.giscus.input_position | default: 'bottom' }}',
       'data-lang': lang,
       'data-loading': 'lazy',
@@ -41,7 +38,7 @@
 
     addEventListener('message', (event) => {
       if (event.source === window && event.data && event.data.id === Theme.ID) {
-        const newTheme = themeMapper[Theme.visualState] || 'noborder_dark';
+        const newTheme = themeMapper[Theme.visualState];
 
         const message = {
           setConfig: {
