@@ -24,6 +24,3 @@ My work primarily revolves around:
 
 If you’re interested in collaborating with me or my community Project E or any projects, feel free to reach out via email at *nijithwilson@gmail.com*
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="neosploit" data-color="#BD5FFF" data-emoji="📖"  data-font="Cookie" data-text="Buy me a book" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="neosploit" data-description="Support me on Buy me a coffee!" data-message="Thank You For Visiting. You Can Support Me By Buy Me Coffee" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
