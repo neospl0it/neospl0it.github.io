@@ -1,12 +1,12 @@
 ---
-title: "Cybersploit 1 VulnHub Walkthrough"
-description: "A detailed walkthrough of Cybersploit 1 from VulnHub. Learn how to solve the machine step by step, from enumeration to exploitation."
-date: "2025-01-20"
+title: Cybersploit 1 VulnHub Walkthrough
+description: A detailed walkthrough of Cybersploit 1 from VulnHub. Learn how to solve the machine step by step, from enumeration to exploitation."
+date: 2025-01-20
 categories: CTF, VulnHub
 tags: vulnhub, ctf, walkthrough
-permalink: "/cybersploit-1-vulnhub-walkthrough/"
+permalink: /cybersploit-1-vulnhub-walkthrough/
 image:  
-  path: "/assets/img/thumbnails/cybersploit1.png"
+  path: /assets/img/thumbnails/cybersploit1.png
 ---
 
 # Aloo Aloo, My Name Is Nijith Wilson: Call Me Neosploit!
