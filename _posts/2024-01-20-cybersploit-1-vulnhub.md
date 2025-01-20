@@ -9,8 +9,6 @@ image:
   path: /assets/img/thumbnails/cybersploit1.png
 ---
 
-# Aloo Aloo, My Name Is Nijith Wilson: Call Me Neosploit!
-
 ## Introduction
 
 Welcome to this detailed guide on **CyberSploit 1**, a beginner-friendly virtual machine hosted on **VulnHub**. In this walkthrough, we will dive into encoder-decoder techniques and explore **Exploit-DB**. The **CyberSploit 1** VM contains three flags to capture, and by following this tutorial, you’ll significantly enhance your penetration testing skills.
