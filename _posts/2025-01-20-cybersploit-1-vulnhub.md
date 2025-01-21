@@ -1,6 +1,6 @@
 ---
 title: Cybersploit 1 VulnHub Walkthrough
-description: A detailed walkthrough of Cybersploit 1 from VulnHub. Learn how to solve the machine step by step, from enumeration to exploitation."
+description: A detailed walkthrough of Cybersploit 1 from VulnHub. Learn how to solve the machine step by step, from enumeration to exploitation.
 date: 2025-01-20
 categories: [CTF, VulnHub]
 tags: [vulnhub, ctf, walkthrough]
