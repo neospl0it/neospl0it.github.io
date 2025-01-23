@@ -103,8 +103,6 @@ Let's do some directory enumeration. Here I am using the **dirsearch** tool:
 
 ```bash
 root@neo ~# dirsearch --url http://192.168.1.5
-/usr/lib/python3/dist-packages/dirsearch/dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
-  from pkg_resources import DistributionNotFound, VersionConflict
 
   _|. _ _  _  _  _ _|_    v0.4.3
  (_||| _) (/_(_|| (_| )
