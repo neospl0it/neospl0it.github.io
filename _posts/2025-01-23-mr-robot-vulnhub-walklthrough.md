@@ -6,7 +6,7 @@ categories: [CTF, VulnHub]
 tags: [vulnhub, ctf, walkthrough]
 permalink: /mr-robot-vulnhub-walkthrough/
 image:  
-  path: /assets/img/thumbnails/cybersploit2.png
+  path: /assets/img/thumbnails/mr-robot.png
 ---
 
 # Mr. Robot CTF Walkthrough: Beginner to Intermediate Challenge
