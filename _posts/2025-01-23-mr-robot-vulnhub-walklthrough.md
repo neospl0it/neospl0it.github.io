@@ -9,8 +9,6 @@ image:
   path: /assets/img/thumbnails/mr-robot.png
 ---
 
-# Mr. Robot CTF Walkthrough: Beginner to Intermediate Challenge
-
 The **Mr. Robot virtual machine (VM)** is an exciting challenge inspired by the hit TV series _Mr. Robot_. It features three hidden keys, progressively increasing in difficulty. No advanced exploitation or reverse engineering is required, making it perfect for beginner-to-intermediate enthusiasts looking to hone their skills. In this guide, we’ll walk you through the steps to find all three keys and complete the challenge.
 
 ## Introduction to the VM
