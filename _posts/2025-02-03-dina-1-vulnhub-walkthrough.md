@@ -73,12 +73,6 @@ Network Distance: 1 hop
 
 ## Exploring the Web Application
 
-Here's the polished version of your write-up:  
-
----
-
-## Exploring the Web Application
-
 ### Accessing the Web Page
 
 Navigating to `http://192.168.1.5/` in a browser displays the homepage.  
