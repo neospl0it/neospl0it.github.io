@@ -1,10 +1,10 @@
 ---
 title: Dina 1 VulnHub Walkthrough
-description: A detailed walkthrough of Cybersploit 1 from VulnHub. Learn how to solve the machine step by step, from enumeration to exploitation.
+description: 
 date: 2025-02-03
 categories: [CTF, VulnHub]
 tags: [vulnhub, ctf, walkthrough]
-permalink: /cybersploit-1-vulnhub-walkthrough/
+permalink: /dina-1-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/dina.png
 ---
