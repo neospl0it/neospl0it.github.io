@@ -3,7 +3,7 @@ title: D C VulnHub Walkthrough
 description: 
 date: 2025-02-05
 categories: [CTF, VulnHub]
-tags: [vulnhub, ctf, walkthrough]
+tags: [vulnhub, ctf, walkthrough, dc]
 permalink: /dc-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/dc.png

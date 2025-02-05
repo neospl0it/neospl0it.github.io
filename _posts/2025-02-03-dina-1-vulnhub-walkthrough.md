@@ -3,7 +3,7 @@ title: Dina 1 VulnHub Walkthrough
 description: 
 date: 2025-02-03
 categories: [CTF, VulnHub]
-tags: [vulnhub, ctf, walkthrough]
+tags: [vulnhub, ctf, walkthrough, dina]
 permalink: /dina-1-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/dina.png

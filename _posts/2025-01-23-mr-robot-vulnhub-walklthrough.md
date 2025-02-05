@@ -3,7 +3,7 @@ title: "Mr Robot VulnHub Walkthrough"
 description: 
 date: 2025-01-23
 categories: [CTF, VulnHub]
-tags: [vulnhub, ctf, walkthrough]
+tags: [vulnhub, ctf, walkthrough, mr-robot]
 permalink: /mr-robot-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/mr-robot.png

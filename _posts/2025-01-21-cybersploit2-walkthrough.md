@@ -3,7 +3,7 @@ title: "Boot 2 Root : Cybersploit 2 VulnHub Walkthrough"
 description: 
 date: 2025-01-21
 categories: [CTF, VulnHub]
-tags: [vulnhub, ctf, walkthrough]
+tags: [vulnhub, ctf, walkthrough, cybersploit2]
 permalink: /cybersploit-2-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/cybersploit2.png
