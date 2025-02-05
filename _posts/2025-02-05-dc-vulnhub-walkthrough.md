@@ -101,7 +101,7 @@ Nmap done: 1 IP address (1 host up) scanned in 10.05 seconds
 
 Visiting `http://192.168.1.5/` in a browser reveals a **Drupal**.
 
-![[browser-img 2.png]]
+![Browser Image](/assets/img/bposts/dc-walkthrough/browser-img.png)
 
 ### Scanning for Hidden Directories
 
@@ -520,8 +520,6 @@ select * from users;
 |   2 | Fred  | $S$DWGrxef6.D0cwB5Ts.GlnLw15chRRWH2s1R3QBwC0EkvBQ/9TCGg | fred@example.org  |       |           | filtered_html    | 1550581952 | 1550582225 | 1550582225 |      1 | Australia/Melbourne |          |       0 | fred@example.org  | b:0; |
 +-----+-------+---------------------------------------------------------+-------------------+-------+-----------+------------------+------------+------------+------------+--------+---------------------+----------+---------+-------------------+------+
 3 rows in set (0.00 sec)
-
-mysql> select * from users;
 ```
 
 
