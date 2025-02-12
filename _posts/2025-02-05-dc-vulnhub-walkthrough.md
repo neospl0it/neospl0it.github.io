@@ -1,5 +1,5 @@
 ---
-title: D C VulnHub Walkthrough
+title: D C 1 VulnHub Walkthrough
 description: 
 date: 2025-02-05
 categories: [CTF, VulnHub]
