@@ -4,7 +4,7 @@ description:
 date: 2025-02-05
 categories: [CTF, VulnHub]
 tags: [vulnhub, ctf, walkthrough, dc]
-permalink: /dc-vulnhub-walkthrough/
+permalink: /dc-1-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/dc-1.png
 ---
