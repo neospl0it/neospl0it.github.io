@@ -7,6 +7,7 @@ tags: [vulnhub, ctf, walkthrough, dc]
 permalink: /dc-1-vulnhub-walkthrough/
 image:  
   path: /assets/img/thumbnails/dc-1.png
+private: true
 ---
 
 ## Introduction
