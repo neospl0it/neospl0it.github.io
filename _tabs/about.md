@@ -7,7 +7,7 @@ order: 4
 ![](assets/img/about/about-dark.png){: .dark }
 ![](assets/img/about/about-light.png){: .light }
 
-# 🔴 Inactive 3 Months Ago.. ⌛
+# 🔴 Inactive 
 
 ## **$ Whoami ?**
 
