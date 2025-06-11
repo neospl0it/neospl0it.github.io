@@ -4,8 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![](assets/img/about/about-dark.png){: .dark }
-![](assets/img/about/about-light.png){: .light }
+![Graphic Design](https://github.com/user-attachments/assets/da0df916-fa1c-49b0-a833-f6dbb37136e8)
 
 # 🔴 Inactive 
 
