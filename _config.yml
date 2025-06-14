@@ -16,7 +16,7 @@ timezone: Asia/Calcutta
 
 title: NEOSPLOIT # the main title
 
-tagline: 🔴 Inactive # Read, Learn, Earn ! # it will display as the subtitle
+tagline: Read, Learn, Earn ! # 🔴 Inactive  # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Discover OSINT, cybersecurity, and geospatial analysis techniques through guides, case studies, and tutorials. Stay updated on digital security and intelligence tools.
@@ -61,7 +61,7 @@ analytics:
   google:
     id: G-6XD54070Q0 # fill in your Google Analytics ID
   goatcounter:
-    id:  # fill in your GoatCounter ID
+    id: # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domainsudo groupadd docker
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider:  # now only supports 'goatcounter'
+  provider: # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/img/profile/neospl0it.png 
+avatar: assets/img/profile/neospl0it.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
