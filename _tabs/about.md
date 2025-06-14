@@ -6,7 +6,6 @@ order: 4
 
 ![About](/assets/img/about/about.png)
 
-# 🔴 Inactive 
 
 ## **$ Whoami ?**
 
