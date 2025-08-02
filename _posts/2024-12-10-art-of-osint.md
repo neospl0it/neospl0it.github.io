@@ -5,6 +5,7 @@ date: 2024-12-10
 categories: [OSINT, Intelligence]
 tags: [osint, intelligence, sock-puppets, human-intelligence, digital-footprint, internet-privacy]
 permalink: /posts/osint/
+pin: true
 image:
   path: assets/img/thumbnails/osint.png
 ---
@@ -201,12 +202,12 @@ When engaging in Open-Source Intelligence (OSINT) or conducting activities onlin
 
 ### **Risk Protection Model: A Scale of Privacy & Security**
 
-| **Protection Goal**                    | **Privacy Level**                           | **Who/What Is Targeted**             | **Tools/Methods**                                            |
-|----------------------------------------|--------------------------------------------|-------------------------------------|-------------------------------------------------------------|
-| **Minimum Protection**                 | Low to Moderate Security and Privacy       | ISPs, Advertisers, General Web Activity | Basic security measures like HTTPS, using default browsers |
-| **Moderate Protection**                | Moderate Security and Privacy              | Internet Trackers, Web Server Admins | VPNs, privacy extensions, use of privacy-focused browsers   |
-| **Higher Protection**                  | Moderate to High Security and Privacy      | Government Surveillance, Cyber Threats | Encrypted communications, proxies, specialized privacy tools|
-| **Maximum Protection**                 | High Security and Privacy                  | Target(s), Government, ISP, Web Admin | Tor, end-to-end encrypted messaging, secure VPNs, anonymity networks |
+| **Protection Goal**     | **Privacy Level**                     | **Who/What Is Targeted**                | **Tools/Methods**                                                    |
+| ----------------------- | ------------------------------------- | --------------------------------------- | -------------------------------------------------------------------- |
+| **Minimum Protection**  | Low to Moderate Security and Privacy  | ISPs, Advertisers, General Web Activity | Basic security measures like HTTPS, using default browsers           |
+| **Moderate Protection** | Moderate Security and Privacy         | Internet Trackers, Web Server Admins    | VPNs, privacy extensions, use of privacy-focused browsers            |
+| **Higher Protection**   | Moderate to High Security and Privacy | Government Surveillance, Cyber Threats  | Encrypted communications, proxies, specialized privacy tools         |
+| **Maximum Protection**  | High Security and Privacy             | Target(s), Government, ISP, Web Admin   | Tor, end-to-end encrypted messaging, secure VPNs, anonymity networks |
 
 #### **Protection Spectrum**
 
@@ -1261,12 +1262,12 @@ When engaging in Open-Source Intelligence (OSINT) or conducting activities onlin
 
 ### **Risk Protection Model: A Scale of Privacy & Security**
 
-| **Protection Goal**                    | **Privacy Level**                           | **Who/What Is Targeted**             | **Tools/Methods**                                            |
-|----------------------------------------|--------------------------------------------|-------------------------------------|-------------------------------------------------------------|
-| **Minimum Protection**                 | Low to Moderate Security and Privacy       | ISPs, Advertisers, General Web Activity | Basic security measures like HTTPS, using default browsers |
-| **Moderate Protection**                | Moderate Security and Privacy              | Internet Trackers, Web Server Admins | VPNs, privacy extensions, use of privacy-focused browsers   |
-| **Higher Protection**                  | Moderate to High Security and Privacy      | Government Surveillance, Cyber Threats | Encrypted communications, proxies, specialized privacy tools|
-| **Maximum Protection**                 | High Security and Privacy                  | Target(s), Government, ISP, Web Admin | Tor, end-to-end encrypted messaging, secure VPNs, anonymity networks |
+| **Protection Goal**     | **Privacy Level**                     | **Who/What Is Targeted**                | **Tools/Methods**                                                    |
+| ----------------------- | ------------------------------------- | --------------------------------------- | -------------------------------------------------------------------- |
+| **Minimum Protection**  | Low to Moderate Security and Privacy  | ISPs, Advertisers, General Web Activity | Basic security measures like HTTPS, using default browsers           |
+| **Moderate Protection** | Moderate Security and Privacy         | Internet Trackers, Web Server Admins    | VPNs, privacy extensions, use of privacy-focused browsers            |
+| **Higher Protection**   | Moderate to High Security and Privacy | Government Surveillance, Cyber Threats  | Encrypted communications, proxies, specialized privacy tools         |
+| **Maximum Protection**  | High Security and Privacy             | Target(s), Government, ISP, Web Admin   | Tor, end-to-end encrypted messaging, secure VPNs, anonymity networks |
 
 #### **Protection Spectrum**
 
