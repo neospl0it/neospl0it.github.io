@@ -1,7 +1,7 @@
 ---
 title: "GEO-OSINT Exercise 001: Locating in Kiffa, Mauritania"
 description: "Discover how OSINT techniques can uncover precise locations from minimal clues. This case study explores geospatial tools and visual analysis to accurately trace coordinates based on an image from a tweet."
-date: 2024-12-26
+date: 2025-07-31
 categories: [OSINT, GEO-OSINT, Case Study]
 tags: [geo-osint, osint, geolocation, kiffa, mauritania, google earth pro, visual analysis, ethical osint]
 image:  
