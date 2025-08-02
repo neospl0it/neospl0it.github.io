@@ -30,19 +30,21 @@ Your mission:
 
 ## Step 1: Image Analysis
 
-!\[\[Pasted image 20250802094302.png]]
+![Image](/assets/img/bposts/geo-osint-exercise-03/image.png)
 
-We see two national flags — Turkish and Somali — suggesting a formal government meeting. The background features a large golden building with glass panels and a red emblem at the top. This hints at an official or presidential building.
+We see two national flags — Turkish and Somali —, Carpets suggesting a formal government meeting. The background features a large golden entrance with glass panels and a red emblem of Presidential Seal of Turkey at the top . This cofirms at an official or presidential building.
+
+### Google Reverse Image Search
 
 So... let’s start with **Google Reverse Image Search**.
 
-!\[\[Pasted image 20250802195953.png]]
+![Search-Result](/assets/img/bposts/geo-osint-exercise-03/google-result.png)
 
 In the results, I found some media reports and social media posts featuring this image.
 
 Naturally, my attention went to **Instagram**. Why? Because psychologically, people tend to post real-time and short-captioned content there, making it useful for fast clues.
 
-!\[\[Pasted image 20250802200218.png]]
+![Instagram-Post](/assets/img/bposts/geo-osint-exercise-03/instagram-post.png)
 
 Boom. Got it.
 
@@ -81,11 +83,5 @@ You can use AI tools like **ChatGPT** to help guide your thinking. But don’t f
 * 📍 **Location**: Presidential Complex, Ankara, Turkey
 * 🌐 **Coordinates**: `39.930305040643155, 32.79637191853982`
 
-
-### OSINT isn't just about tools. It's about observation, pattern recognition, and verifying clues.
-
-Thanks for joining me in this mission. Stay sharp, stay curious — more exercises coming soon!
-
-**- Neosploit**
 
 
