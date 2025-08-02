@@ -1,7 +1,7 @@
 ---
 title: "Geo-OSINT Exercise 002: Solving Clues in a Train Station Snapshot"
 description: "Explore Geo-OSINT techniques in Exercise 002, where we analyze a train station image to identify its location and the tallest building in the background. Learn step-by-step OSINT methods to uncover location-based information from photos."
-date: 2024-12-27
+date: 2025-08-01
 categories: [OSINT ,GEO-OSINT]
 tags: [osint, geolocation, image analysis, train station identification, tallest building]
 image:  
