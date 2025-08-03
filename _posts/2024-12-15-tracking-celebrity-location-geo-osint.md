@@ -4,6 +4,7 @@ description: "Explore how OSINT techniques were applied to locate Jonny Lee Mill
 date: 2024-12-15
 categories: [OSINT, GEO-OSINT]
 tags: [osint, geo-osint, angelina jolie, jonny lee miller, dumbo, brooklyn, celebrity locations]
+pin: true
 image:  
   path: assets/img/thumbnails/geo-osint-jonny-lee.png
 ---
