@@ -1,4 +1,9 @@
-User-agent: *
-Allow: /
+---
+permalink: /robots.txt
+---
 
-Sitemap: https://neospl0it.github.io/sitemap.xml
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
