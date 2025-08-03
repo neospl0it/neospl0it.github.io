@@ -87,7 +87,7 @@ Visit the browser:
 
 ![Browser Image](/assets/img/bposts/cybersploit-1-walkthrough/browser-img.png)
 
-Let’s check the HTML source of the webpage:
+Let’s check the HTML source of the png)
 
 ![Source Code](/assets/img/bposts/cybersploit-1-walkthrough/source-code.png)
 
