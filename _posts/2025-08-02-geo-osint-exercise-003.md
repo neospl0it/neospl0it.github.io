@@ -95,10 +95,12 @@ Simple Be smart search **Presidential Complex Turkey** on google map or goole se
 
 Since it’s a restricted government building, there's no Street View. But the coordinates are available!
 
-🎯 **Coordinates:**
+**Coordinates:**
 `39.93091069459019, 32.79907204853644`
 
-> ## 💡 Bonus Tip  
+>
+>  **Bonus Tip**
+> 
 > You can use AI tools like **ChatGPT** to help guide your thinking, but don’t rely on them completely. Use AI as a **brainstorming partner**, not a final authority.  
 > In OSINT, AI can help narrow down possibilities — but **verification is your job**.  
 {: .prompt-tip }
