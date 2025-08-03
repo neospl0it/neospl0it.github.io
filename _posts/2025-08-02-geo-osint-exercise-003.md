@@ -2,7 +2,7 @@
 title: "GEO-OSINT Exercise 003: Identifying the Turkish Presidential Complex"
 description: "Learn how open-source intelligence and visual clues helped trace the exact location of a diplomatic meeting between Somali and Turkish leaders. This exercise shows how geolocation techniques pinpointed the Presidential Complex in Ankara, Turkey."
 date: 2025-08-02
-categories: [OSINT, GEO-OSINT, Case Study]
+categories: [OSINT, GEO-OSINT]
 tags: [geo-osint, osint, geolocation, turkey, presidential complex, ankara, visual investigation, image analysis]
 permalink: /geo-osint-exercise-003/
 image:  
