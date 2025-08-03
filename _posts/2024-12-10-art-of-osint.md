@@ -5,7 +5,7 @@ date: 2024-12-10
 categories: [OSINT, Intelligence]
 tags: [osint, intelligence, sock-puppets, human-intelligence, digital-footprint, internet-privacy]
 permalink: /posts/osint/
-pin: false
+pin: true
 image:
   path: assets/img/thumbnails/osint.png
 ---

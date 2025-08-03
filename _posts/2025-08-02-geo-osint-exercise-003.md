@@ -98,18 +98,17 @@ Since it’s a restricted government building, there's no Street View. But the c
 🎯 **Coordinates:**
 `39.93091069459019, 32.79907204853644`
 
-
->
-## Bonus Tip
-
-You can use AI tools like **ChatGPT** to help guide your thinking. But don’t fully rely on it — use it as a brainstorming partner. In OSINT, AI can help narrow the path, but **you** have to verify.
+> ## 💡 Bonus Tip  
+> You can use AI tools like **ChatGPT** to help guide your thinking, but don’t rely on them completely. Use AI as a **brainstorming partner**, not a final authority.  
+> In OSINT, AI can help narrow down possibilities — but **verification is your job**.  
 {: .prompt-tip }
->
+
 
 
 ## Final Answer
 
 * 📍 **Location**: Presidential Complex, Ankara, Turkey
 * 🌐 **Coordinates**: `39.930305040643155, 32.79637191853982`
+
 
 
