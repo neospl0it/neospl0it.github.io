@@ -32,7 +32,16 @@ Your mission:
 
 ![Image](/assets/img/bposts/geo-osint-exercise-03/image.png)
 
-We see two national flags — Turkish and Somali —, Carpets suggesting a formal government meeting. The background features a large golden entrance with glass panels and a red emblem of Presidential Seal of Turkey at the top . This cofirms at an official or presidential building.
+
+Start by taking a long, detailed look. Forget assumptions — focus on **what you actually see**.
+
+#### The Red Emblem & Flags
+
+We see two flags: one Turkish 🇹🇷, the other Somali 🇸🇴. Right above them? A **red circular emblem** with gold design — this is a key marker. If you’ve ever studied national seals, you’ll recognize it as **the Presidential Seal of Turkey**.
+
+#### Architecture Hints
+
+The grand golden doors, glass panels, symmetry — all scream **official government**. That entrance is not your everyday hotel or event hall.
 
 ### Google Reverse Image Search
 
@@ -42,14 +51,19 @@ So... let’s start with **Google Reverse Image Search**.
 
 In the results, I found some media reports and social media posts featuring this image.
 
-Naturally, my attention went to **Instagram**. Why? Because psychologically, people tend to post real-time and short-captioned content there, making it useful for fast clues.
+Naturally, my attention went to **Instagram**. 
+
+![Search-Result](/assets/img/bposts/geo-osint-exercise-03/google-results.png)
+
+Why? Because psychologically, people tend to post real-time and short-captioned content there, making it useful for fast clues.
+
+
+## Step 2: Clue From Instagram Post
 
 ![Instagram-Post](/assets/img/bposts/geo-osint-exercise-03/instagram-post.png)
 
 Boom. Got it.
 
-
-## Step 2: Clue From Instagram
 
 The post by `communications_turkiyee` had this caption:
 
@@ -60,28 +74,42 @@ The caption clearly mentions:
 
 ## Step 3: Confirm the Location
 
-Next, I Googled **"Turkish Presidential Complex"**, and yeah — 100% match.
+Next, I Googled **"Turkish Presidential Complex"**, 
+
+![](/assets/img/bposts/geo-osint-exercise-03/presidential-complex.png)
+
+Here we go we got similar entrance bulding images
+
+![](/assets/img/bposts/geo-osint-exercise-03/similar-image.png)
 
 I found **more images** with the same golden building, red emblem, and glass structure — confirming the background from our task.
+so 100% Confirm
 
+I cant show more images becuase more images from google are licensed
 
 ## Step 4: Get the Coordinates
 
-Open Google Maps, search **Presidential Complex Turkey**, and click on “Directions.” Since it’s a restricted government building, there's no Street View. But the coordinates are available!
+Simple Be smart search **Presidential Complex Turkey** on google map or goole search and click on “Directions.” 
+
+![](/assets/img/bposts/geo-osint-exercise-03/map.png)
+
+Since it’s a restricted government building, there's no Street View. But the coordinates are available!
 
 🎯 **Coordinates:**
-`39.930305040643155, 32.79637191853982`
+`39.93091069459019, 32.79907204853644`
 
 
+>
 ## Bonus Tip
 
 You can use AI tools like **ChatGPT** to help guide your thinking. But don’t fully rely on it — use it as a brainstorming partner. In OSINT, AI can help narrow the path, but **you** have to verify.
+{: .prompt-tip }
+>
 
 
 ## Final Answer
 
 * 📍 **Location**: Presidential Complex, Ankara, Turkey
 * 🌐 **Coordinates**: `39.930305040643155, 32.79637191853982`
-
 
 
