@@ -12,7 +12,7 @@ In this exercise, we're going to tackle a classic OSINT (Open Source Intelligenc
 
 #### Task Breakdown
 
-![Exercise Image](/assets/img/bposts/geo-osint-exercise-02/osintexercise002.png)
+![Exercise Image](/assets/img/bposts/geo-osint-exercise-02/osintexercise002.png){: loading="lazy"}
 
 Provided with a photograph (view the original [here](https://gralhix.com/wp-content/uploads/2024/09/osint-exercise-002-big-picture.png)) depicting a bustling train station surrounded by towering buildings. From this, we needed to answer the following questions:
 
@@ -25,10 +25,10 @@ With just these two questions, we set off on our Geo-OSINT adventure!
 
 #### Evidence and Verification
 
-![Station Name](/assets/img/bposts/geo-osint-exercise-02/signage-marked.png)
+![Station Name](/assets/img/bposts/geo-osint-exercise-02/signage-marked.png){: loading="lazy"}
 *Image showing the station’s name on the signage*
 
-![Station Name Result](/assets/img/bposts/geo-osint-exercise-02/stattion-name-google-map-result.png)
+![Station Name Result](/assets/img/bposts/geo-osint-exercise-02/stattion-name-google-map-result.png){: loading="lazy"}
 *Google Maps result showing the Flinders Street Station name*
 
 After closely examining the image,  I was able to confirm that the train station seen in the photograph is **Flinders Street Station** in Melbourne, Australia.
@@ -37,7 +37,7 @@ After closely examining the image,  I was able to confirm that the train station
 
 Next, we needed to identify the tallest structure in the photo. 
 
-![2D Image Comparison](/assets/img/bposts/geo-osint-exercise-02/2d-image-of-buldings.png)
+![2D Image Comparison](/assets/img/bposts/geo-osint-exercise-02/2d-image-of-buldings.png){: loading="lazy"}
 *Comparison of the Google Earth Pro 2D image with the Geo-OSINT exercise image, marking each building*
 
 Using Google Earth Pro, I identified several distinct buildings in the photo, each marked with a letter to help keep track. Here’s a rundown of the findings:
@@ -50,10 +50,10 @@ Using Google Earth Pro, I identified several distinct buildings in the photo, ea
 
 Another skyscraper in the image that didn’t immediately appear on Google Earth’s 2D view.
 
-![Bulding-E](/assets/img/bposts/geo-osint-exercise-02/bulding-e.png)
+![Bulding-E](/assets/img/bposts/geo-osint-exercise-02/bulding-e.png){: loading="lazy"}
 *BUlding Marked to show the “hidden” building as "E"*
 
-![Bulding-E Google Earth Pro](/assets/img/bposts/geo-osint-exercise-02/bulding-e-google-earth.png) 
+![Bulding-E Google Earth Pro](/assets/img/bposts/geo-osint-exercise-02/bulding-e-google-earth.png){: loading="lazy"}
 *Google Earth Pro image showing the "E" building*
 
 To get a better look, zoomed out on Google Earth Pro and found it: **FOCUS Apartments by Central Equity**.
