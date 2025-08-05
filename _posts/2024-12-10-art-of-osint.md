@@ -4,7 +4,7 @@ description: "Discover the essential skills and tips to master OSINT, transformi
 date: 2024-12-16
 categories: [OSINT, Intelligence]
 tags: [osint, intelligence, sock-puppets, human-intelligence, digital-footprint, internet-privacy]
-permalink: /posts/osint/
+permalink: /posts/art-of-osint/
 pin: true
 image:
   path: assets/img/thumbnails/osint.png
