@@ -2119,3 +2119,6 @@ These tools are used to test the strength of passwords by attempting to crack th
 > 
 > Stay tuned for the next update. We are working on new content and will be publishing more information soon. Check back regularly for the latest posts and updates!
 {: .prompt-info }
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="neosploit" data-description="Support me on Buy me a coffee!" data-message="Like my content? Coffee’s on you!" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
